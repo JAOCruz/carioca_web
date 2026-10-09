@@ -1,0 +1,9 @@
+.DS_Store
+node_modules/
+.netlify/
+# material original pesado del cliente (queda local)
+Carioca/
+brand/*.ai
+.playwright-mcp/
+# documentos crudos del cliente (quedan locales)
+carioca_details.txt

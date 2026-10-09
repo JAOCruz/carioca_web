@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+# [[PENDIENTE: dominio]] al lanzar, descomentar con la URL final:
+# Sitemap: https://DOMINIO/sitemap.xml
