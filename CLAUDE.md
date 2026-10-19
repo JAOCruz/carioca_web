@@ -13,7 +13,8 @@ Resumen (lo actualiza la sesión, 2026-10-09):
 - Nombre / marca: **Carioca S.R.L.** (Carioca Call Center). Contacto del cliente: Isailis Pujols (ipujols@carioca.com.do).
 - Servicios: outsourcing de call center / contact center (un solo servicio). Beneficios que dieron: reducción de costos fijos (gasto fijo → variable), escalabilidad ante picos, tecnología de reporte y monitoreo en tiempo real, centro a la medida con recursos exclusivos y confidencialidad. Diferencial: centro pequeño = dedicación completa y privacidad; **30 años de experiencia** en contact centers. Proceso de 12 etapas (Planificación → Estandarización) tras reuniones previas de contrato y metas. Acción principal: contactar.
 - Idiomas / mercado: sitio en **español e inglés**; sin límite geográfico.
-- Contacto: WhatsApp +1 809-535-3864 (dado como "WhatsApp de contacto"; el campo "WhatsApp para la página" vino vacío). Formulario → cariocacallcenter@carioca.com.do. Sin dirección (no hay mapa).
+- Contacto: +1 809-535-3864 es la **línea de atención al cliente (llamadas, NO WhatsApp)**, según nota del cliente del 2026-10-19; el WhatsApp lo darán después. Formulario → cariocacallcenter@carioca.com.do. Dirección pendiente: la sección Ubicación usa provisionalmente "Santo Domingo, República Dominicana" (cambiar `query`/`q` del botón y del iframe en `#ubicacion`).
+- Notas del cliente (2026-10-19): logo del menú siempre en rojo (también en la página de gracias); el botón flotante es de llamada (rojo) hasta que haya WhatsApp.
 - Logo / colores / fotos: colores #ffffff, #ec2025, #262526. Logo = rectángulo rojo con "C" blanca + wordmark "Carioca" (SVG en `brand/svg/`, limpios en `site/img/logo*.svg`). Degradado rojo→negro de marca. Foto de agentes del mockup (probablemente de stock, baja resolución 948px). Tienen presentación y video de las instalaciones (no enviados).
 - Dominio: no tienen para el proyecto (su email usa carioca.com.do). Lanzamiento deseado: **20 oct 2026**. Sin GA4/Meta Pixel.
 - Archivos leídos: `carioca_details.txt` (colores + cuestionario), `Carioca/SVG/CariocaBrand-01…08.svg` (08 trae la foto embebida, 07 el degradado). `CariocaBrand.ai` no se abrió (mismo contenido que los SVG).
@@ -61,7 +62,8 @@ brand/           ← logo y material original del cliente (no se publica)
 
 ## Preguntas para el cliente
 - Lista concreta de servicios (atención entrante, llamadas salientes/ventas, cobros, soporte técnico, chat/email/redes…) y cuál destacar.
-- ¿El WhatsApp +1 809-535-3864 es el que debe ir en la página?
+- Número de WhatsApp (el 809-535-3864 es la línea de atención, solo llamadas).
+- Dirección exacta de la oficina (o enlace de Google Maps) para la sección Ubicación.
 - Casos de éxito reales (cliente o sector, resultado, permiso para mencionarlos) y logos de clientes si se pueden mostrar.
 - En "Escalabilidad" mencionaron "picos de demanda del mercado cervecero y de bebidas": ¿es su nicho principal o lo dejamos genérico? (en el demo quedó genérico).
 - ¿Atienden en inglés (campañas bilingües)? Si sí, lo destacamos como servicio.

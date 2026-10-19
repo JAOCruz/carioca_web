@@ -6,7 +6,7 @@
     'hero.eyebrow': 'Call Center Outsourcing',
     'hero.title': 'Your contact center, <em>in expert hands.</em>',
     'hero.lead': 'We take care of your customers with a team dedicated exclusively to your operation. We lower your operating costs while raising the quality of your service, backed by 30 years of experience.',
-    'hero.cta': 'Request a proposal', 'hero.wa': 'Message us on WhatsApp', 'hero.chip': 'Call in progress',
+    'hero.cta': 'Request a proposal', 'hero.call': 'Call us: +1 (809) 535-3864', 'hero.chip': 'Call in progress',
     'hero.years': 'years of experience<br>in contact centers',
     'pill.1': '<b>Exclusive team</b> dedicated to your operation',
     'pill.2': '<b>Confidentiality</b> of your information',
@@ -47,12 +47,14 @@
     'st.1': 'Planning', 'st.2': 'Organization', 'st.3': 'Implementation', 'st.4': 'Execution', 'st.5': 'Review', 'st.6': 'Analysis',
     'st.7': 'Feedback', 'st.8': 'Follow-up', 'st.9': 'Evaluation', 'st.10': 'Results measurement', 'st.11': 'Conclusions', 'st.12': 'Standardization',
     'ct.eyebrow': 'Contact', 'ct.title': 'Let’s talk about your operation.',
+    'ct.line': 'Customer service line',
+    'loc.eyebrow': 'Location', 'loc.title': 'Visit us.', 'loc.addrL': 'Address', 'loc.addr': 'Santo Domingo, Dominican Republic', 'loc.cta': 'Open in Google Maps',
     'ct.lead': 'Tell us what you need and we’ll prepare a proposal aligned with your goals.',
-    'f.name': 'Name', 'f.company': 'Company', 'f.email': 'Email', 'f.phone': 'Phone / WhatsApp',
+    'f.name': 'Name', 'f.company': 'Company', 'f.email': 'Email', 'f.phone': 'Phone',
     'f.msg': 'Which operation would you like to outsource?', 'f.send': 'Send request',
     'f.note': 'We’ll get back to you as soon as possible. Your data is only used to contact you.',
     'foot.tag': 'Call center outsourcing with complete dedication.', 'foot.by': 'Site by Arcova',
-    'ty.title': 'Thank you! We received your request.', 'ty.lead': 'Our team will contact you shortly. If it’s urgent, message us on WhatsApp.', 'ty.back': 'Back to home'
+    'ty.title': 'Thank you! We received your request.', 'ty.lead': 'Our team will contact you shortly. If it’s urgent, call our customer service line.', 'ty.back': 'Back to home'
   };
   var META = {
     es: { title: document.title, wa: 'Hola Carioca, me interesa conocer sus servicios de call center.' },

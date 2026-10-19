@@ -42,7 +42,7 @@
 
 <header class="nav" id="top">
   <div class="wrap nav__in">
-    <a class="nav__logo" href="#top" aria-label="Carioca — inicio"><img class="logo-c" src="img/logo.svg" alt="Carioca" width="148" height="23"><img class="logo-w" src="img/logo-white.svg" alt="" width="148" height="23"></a>
+    <a class="nav__logo" href="#top" aria-label="Carioca — inicio"><img src="img/logo.svg" alt="Carioca" width="148" height="23"></a>
     <nav class="nav__links" id="menu" aria-label="Principal">
       <a href="#servicios" data-i18n="nav.services">Servicios</a>
       <a href="#por-que" data-i18n="nav.why">Por qué Carioca</a>
@@ -68,7 +68,7 @@
       <p class="hero__lead reveal" data-i18n="hero.lead">Atendemos a tus clientes con un equipo exclusivo para tu operación. Reducimos tus costos operativos mientras elevamos la calidad de tu servicio, con el respaldo de 30 años de experiencia.</p>
       <div class="hero__ctas reveal">
         <a class="btn btn--red" href="#contacto" data-i18n="hero.cta">Solicitar propuesta</a>
-        <a class="btn btn--ghost" href="https://wa.me/18095353864?text=Hola%20Carioca%2C%20me%20interesa%20conocer%20sus%20servicios%20de%20call%20center." target="_blank" rel="noopener" data-wa><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-wa"/></svg><span data-i18n="hero.wa">Escríbenos por WhatsApp</span></a>
+        <a class="btn btn--ghost" href="tel:+18095353864" data-tel><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-phone"/></svg><span data-i18n="hero.call">Llámanos: (809) 535-3864</span></a>
       </div>
     </div>
     <div class="hero__visual reveal">
@@ -218,9 +218,9 @@
       <h2 class="h2 reveal" data-i18n="ct.title">Hablemos de tu operación.</h2>
       <p class="lead reveal" data-i18n="ct.lead">Cuéntanos qué necesitas y te preparamos una propuesta ajustada a tus metas.</p>
       <ul class="channels">
-        <li class="reveal"><a href="https://wa.me/18095353864?text=Hola%20Carioca%2C%20me%20interesa%20conocer%20sus%20servicios%20de%20call%20center." target="_blank" rel="noopener" data-wa>
-          <span class="channels__ic channels__ic--wa"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-wa"/></svg></span>
-          <span><small>WhatsApp</small>+1 (809) 535-3864</span></a></li>
+        <li class="reveal"><a href="tel:+18095353864" data-tel>
+          <span class="channels__ic channels__ic--red"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-phone"/></svg></span>
+          <span><small data-i18n="ct.line">Línea de atención al cliente</small>+1 (809) 535-3864</span></a></li>
         <li class="reveal"><a href="mailto:cariocacallcenter@carioca.com.do" data-mail>
           <span class="channels__ic"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-mail"/></svg></span>
           <span><small>Email</small>cariocacallcenter@carioca.com.do</span></a></li>
@@ -233,11 +233,32 @@
       <div class="field"><label for="f-nombre" data-i18n="f.name">Nombre</label><input id="f-nombre" name="nombre" autocomplete="name" required></div>
       <div class="field"><label for="f-empresa" data-i18n="f.company">Empresa</label><input id="f-empresa" name="empresa" autocomplete="organization" required></div>
       <div class="field"><label for="f-email" data-i18n="f.email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
-      <div class="field"><label for="f-tel" data-i18n="f.phone">Teléfono / WhatsApp</label><input id="f-tel" name="telefono" type="tel" autocomplete="tel"></div>
+      <div class="field"><label for="f-tel" data-i18n="f.phone">Teléfono</label><input id="f-tel" name="telefono" type="tel" autocomplete="tel"></div>
       <div class="field field--full"><label for="f-msg" data-i18n="f.msg">¿Qué operación te gustaría delegar?</label><textarea id="f-msg" name="mensaje" rows="4" required></textarea></div>
       <button class="btn btn--red btn--block" type="submit" data-i18n="f.send">Enviar solicitud</button>
       <p class="form__note" data-i18n="f.note">Te respondemos lo antes posible. Tus datos solo se usan para contactarte.</p>
     </form>
+  </div>
+</section>
+
+<!-- UBICACIÓN — [[PENDIENTE: dirección real]] la ubicación es provisional (centro de Santo Domingo).
+     Para cambiarla: reemplazar MAPS_Q en el src del iframe y en el href del botón. -->
+<section class="section location" id="ubicacion">
+  <div class="wrap location__in">
+    <div class="location__info">
+      <p class="eyebrow reveal" data-i18n="loc.eyebrow">Ubicación</p>
+      <h2 class="h2 reveal" data-i18n="loc.title">Visítanos.</h2>
+      <ul class="location__list">
+        <li class="reveal"><span class="channels__ic"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-pin"/></svg></span>
+          <span><small data-i18n="loc.addrL">Dirección</small><span data-i18n="loc.addr">Santo Domingo, República Dominicana</span></span></li>
+        <li class="reveal"><span class="channels__ic channels__ic--red"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-phone"/></svg></span>
+          <span><small data-i18n="ct.line">Línea de atención al cliente</small><a href="tel:+18095353864" data-tel>+1 (809) 535-3864</a></span></li>
+      </ul>
+      <a class="btn btn--red reveal" href="https://www.google.com/maps/search/?api=1&amp;query=Santo+Domingo%2C+Rep%C3%BAblica+Dominicana" target="_blank" rel="noopener" data-maps><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-pin"/></svg><span data-i18n="loc.cta">Abrir en Google Maps</span></a>
+    </div>
+    <div class="location__map reveal">
+      <iframe src="https://www.google.com/maps?q=Santo+Domingo%2C+Rep%C3%BAblica+Dominicana&amp;z=13&amp;output=embed" title="Mapa de ubicación de Carioca" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
   </div>
 </section>
 </main>
@@ -253,6 +274,7 @@
       <a href="#por-que" data-i18n="nav.why">Por qué Carioca</a>
       <a href="#proceso" data-i18n="nav.process">Cómo trabajamos</a>
       <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+      <a href="#ubicacion" data-i18n="loc.eyebrow">Ubicación</a>
     </nav>
     <div class="footer__bottom">
       <span>© <span data-year>2026</span> Carioca S.R.L.</span>
@@ -261,7 +283,8 @@
   </div>
 </footer>
 
-<a class="wa-float" href="https://wa.me/18095353864?text=Hola%20Carioca%2C%20me%20interesa%20conocer%20sus%20servicios%20de%20call%20center." target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp" data-wa><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-wa"/></svg></a>
+<!-- Botón flotante: llamada a la línea de atención. [[PENDIENTE: WhatsApp]] cuando lo den, cambiar a wa.me con clase float-btn--wa, data-wa e ícono #i-wa -->
+<a class="float-btn" href="tel:+18095353864" aria-label="Llamar a la línea de atención al cliente" data-tel><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-phone"/></svg></a>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8zm8.4-18.2A11.8 11.8 0 0 0 1.9 17.9L.2 24l6.3-1.7A11.8 11.8 0 0 0 24 12a11.7 11.7 0 0 0-3.6-8.4z"/></symbol>
@@ -272,6 +295,8 @@
   <symbol id="i-coin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15 8.5h-4a2 2 0 0 0 0 4h2a2 2 0 0 1 0 4H9M12 6.5v2M12 16.5v2"/></g></symbol>
   <symbol id="i-scale" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V14M10 20V9M16 20V12M22 20V4"/><path d="m3 9 5-5 4 3 6-5"/></g></symbol>
   <symbol id="i-headset" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="13" width="4" height="6" rx="1.5"/><rect x="17" y="13" width="4" height="6" rx="1.5"/><path d="M19 19c0 1.7-2 2.5-5 2.5"/></g></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M6.6 3.5h-2A1.6 1.6 0 0 0 3 5.2C3.4 13.6 10.4 20.6 18.8 21a1.6 1.6 0 0 0 1.7-1.6v-2a1.6 1.6 0 0 0-1.2-1.6l-3-.8a1.6 1.6 0 0 0-1.6.5l-1 1.2a12.5 12.5 0 0 1-5.4-5.4l1.2-1a1.6 1.6 0 0 0 .5-1.6l-.8-3a1.6 1.6 0 0 0-1.6-1.2z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
   <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></g></symbol>
 </svg>
 

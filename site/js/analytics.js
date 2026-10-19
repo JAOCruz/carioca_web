@@ -17,6 +17,8 @@
     var a = e.target.closest('a');
     if (!a) return;
     if (a.hasAttribute('data-wa')) track('whatsapp_click', { link_url: a.href, location: a.className || 'link' });
+    else if (a.hasAttribute('data-tel')) track('phone_click', { link_url: a.href });
+    else if (a.hasAttribute('data-maps')) track('maps_click', { link_url: a.href });
     else if (a.hasAttribute('data-mail')) track('email_click', { link_url: a.href });
   });
   var form = document.querySelector('form[name="contacto"]');
