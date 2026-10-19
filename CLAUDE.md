@@ -19,6 +19,7 @@ Resumen (lo actualiza la sesión, 2026-10-09):
 - Archivos leídos: `carioca_details.txt` (colores + cuestionario), `Carioca/SVG/CariocaBrand-01…08.svg` (08 trae la foto embebida, 07 el degradado). `CariocaBrand.ai` no se abrió (mismo contenido que los SVG).
 
 Estado: **demo 1 construido** en `site/` (landing ES/EN con toggle, gracias.html, Netlify Forms, SEO base con noindex mientras sea demo). Repo: `github.com/JAOCruz/carioca_web` (`main`). Netlify: por conectar.
+Juan pidió (2026-10-19) no mostrar recuadros `[[PENDIENTE]]` en la página para presentarla al cliente: los pendientes van como comentario HTML y en la lista de preguntas.
 
 Si falta algo, **no lo inventes** (ni clientes, ni cifras, ni testimonios, ni certificaciones). Deja un marcador visible `[[PENDIENTE: …]]` y anótalo en la lista "Preguntas para el cliente" al final de este archivo.
 
