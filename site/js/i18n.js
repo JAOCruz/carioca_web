@@ -7,7 +7,7 @@
     'hero.title': 'Your contact center, <em>in expert hands.</em>',
     'hero.lead': 'We take care of your customers with a team dedicated exclusively to your operation. We lower your operating costs, while raising the quality of your service with the backing of 30 years of experience.',
     'hero.cta': 'Request a proposal', 'hero.call': 'Call us: +1 (809) 535-3864', 'hero.chip': 'Call in progress',
-    'hero.years': 'years of experience<br>in contact centers',
+    'hero.years': 'years of experience<br>in the market',
     'pill.1': '<b>Exclusive team</b> dedicated to your operation',
     'pill.2': '<b>Confidentiality</b> of your information',
     'pill.3': '<b>Real-time</b> reporting and monitoring',
@@ -30,8 +30,8 @@
     'svc.eyebrow': 'Services',
     'svc.title': 'A contact center tailored to you.',
     'svc.lead': 'We manage the operations of your customer service so your team can focus on the strategic core of the business.',
-    'sol.1t': 'Inbound call handling', 'sol.1d': 'We answer your customers’ calls: questions, requests and complaints, with a team that knows your brand.',
-    'sol.2t': 'Outbound calls', 'sol.2d': 'We reach out to your customers for you: follow-ups, confirmations, surveys and campaigns aligned with your goals.',
+    'sol.1t': 'Inbound call handling', 'sol.1d': 'Customer service: we answer your customers’ calls, questions, requests and complaints, with a team that knows your brand.',
+    'sol.2t': 'Outbound calls', 'sol.2d': 'Sales and prospecting: we reach out to your customers and prospects for you, with campaigns aligned with your goals.',
     'sol.3t': 'Back office support', 'sol.3d': 'We handle the administrative and support tasks behind your operation, so your team can focus on strategy.',
     'sol.4tag': 'Email & WhatsApp', 'sol.4t': 'Email and WhatsApp support', 'sol.4d': 'We answer your customers in writing, by email and WhatsApp, with the tone and response times we agree on with you.',
     'sol.5tag': 'Reporting', 'sol.5t': 'Real-time reporting and monitoring', 'sol.5d': 'We give you clear metrics on your operation, with real-time reporting and monitoring tools to make data-driven decisions.',
@@ -64,9 +64,17 @@
     'sd.10': 'We present the results with clear data.',
     'sd.11': 'We identify lessons learned and opportunities to improve.',
     'sd.12': 'We turn what works into stable processes.',
-    'ab.eyebrow': 'About us', 'ab.title': 'We are Carioca.', 'ab.badge': 'years of experience',
-    'ab.p1': 'Carioca S.R.L. is a contact center that offers outsourcing services to companies that want to improve their customer service and reduce their operating costs.',
-    'ab.p2': 'We work with exclusive resources for each client, continuous-improvement processes and real-time reporting, backed by 30 years of experience in the contact center industry.',
+    'ab.eyebrow': 'About us', 'ab.title': 'We are Carioca.', 'ab.badge': 'years in the market',
+    'ab.p1': 'Carioca, S.R.L. is a company registered in the Dominican Republic with more than 30 years of experience in the market. We specialize in remittance services and in the commercial and financial sector, backed by an efficient network of branches across the country.',
+    'ab.p2': 'As part of our growth and commitment to innovation, we have expanded into the call center business, offering outsourcing services to national and international clients. We have a modern contact center platform and a flexible, efficient technology solution that allows us to deliver quality service, optimize processes and adapt to the specific needs of each client.',
+    'team.title': 'Our team', 'team.lead': 'We have a team of highly qualified professionals with extensive experience in managing and operating contact centers.',
+    'team.1r': 'Contact Center Operations Director', 'team.1d': 'More than 30 years of experience in the call center industry, leading customer service and sales operations and managing high-performance teams.',
+    'team.2r': 'Contact Center Operations Manager', 'team.2d': 'More than 25 years of experience in the call center industry, specializing in process optimization, customer experience and operational management.',
+    'ops.title': 'Our operational experience', 'ops.lead': 'We offer end-to-end outsourcing solutions tailored to each client’s needs:',
+    'ops.1': 'Inbound calls <span>(customer service)</span>', 'ops.2': 'Outbound calls <span>(sales and prospecting)</span>', 'ops.3': 'Blended operations <span>(inbound and outbound)</span>',
+    'ops.4': 'Telemarketing and product promotion', 'ops.5': 'Predictive and manual dialing', 'ops.6': 'Data capture and entry <span>(data entry)</span>',
+    'ops.7': 'Billing and collections management', 'ops.8': 'Surveys and market research', 'ops.9': 'Technical support', 'ops.10': 'Back office', 'ops.11': 'Other specialized contact center services',
+    'ops.note': 'Our commitment is to deliver efficient, innovative and results-driven solutions, ensuring an exceptional experience for our clients and their end users.',
     'ab.follow': 'Follow us',
     'ct.eyebrow': 'Contact', 'ct.title': 'Let’s talk about your operation.',
     'ct.line': 'Customer service line',
@@ -76,8 +84,8 @@
     'f.name': 'Name', 'f.company': 'Company', 'f.email': 'Email', 'f.phone': 'Phone',
     'f.msg': 'Which operation would you like to outsource?', 'f.send': 'Send request',
     'f.note': 'We’ll get back to you as soon as possible. Your data is only used to contact you.',
-    'foot.tag': 'Contact center outsourcing services, tailored to you.', 'foot.by': 'Site by Arcova',
-    'ty.title': 'Thank you! We received your request.', 'ty.lead': 'Our team will contact you shortly. If it’s urgent, call our customer service line.', 'ty.back': 'Back to home'
+    'foot.tag': 'A contact center tailored to you.', 'foot.by': 'Site by Arcova',
+    'ty.title': 'Thank you! We received your request.', 'ty.lead': 'Our team will contact you shortly. If it’s urgent, call our customer service line or message us on WhatsApp.', 'ty.back': 'Back to home'
   };
   var META = {
     es: { title: document.title, wa: 'Hola Carioca, me interesa conocer sus servicios de call center.' },
@@ -95,7 +103,7 @@
     document.documentElement.lang = lang;
     if (!document.body.hasAttribute('data-keep-title')) document.title = META[lang].title;
     document.querySelectorAll('a[data-wa]').forEach(function (a) {
-      a.href = 'https://wa.me/18095353864?text=' + encodeURIComponent(META[lang].wa);
+      a.href = 'https://wa.me/18498581517?text=' + encodeURIComponent(META[lang].wa);
     });
     var hid = document.querySelector('input[name="idioma"]');
     if (hid) hid.value = lang;

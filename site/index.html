@@ -23,8 +23,9 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
  {"@type":"ProfessionalService","@id":"#business","name":"Carioca S.R.L.","alternateName":"Carioca Call Center",
-  "description":"Servicios de outsourcing de contact center: atención de llamadas entrantes (inbound), llamadas salientes (outbound), soporte back office, soporte por correo y WhatsApp y reportería en tiempo real, con 30 años de experiencia en el mercado.",
+  "description":"Empresa dominicana con más de 30 años en el mercado que ofrece servicios de outsourcing de contact center para clientes nacionales e internacionales: inbound, outbound, operaciones blended, telemercadeo, data entry, cobros, encuestas, soporte técnico y back office.",
   "email":"cariocacallcenter@carioca.com.do","telephone":"+1-809-535-3864",
+  "contactPoint":[{"@type":"ContactPoint","contactType":"customer service","telephone":"+1-809-535-3864"},{"@type":"ContactPoint","contactType":"sales","telephone":"+1-849-858-1517","contactOption":"WhatsApp"}],
   "address":{"@type":"PostalAddress","addressCountry":"DO"},
   "knowsLanguage":["es","en"],
   "hasOfferCatalog":{"@type":"OfferCatalog","name":"Servicios de outsourcing","itemListElement":[
@@ -32,7 +33,14 @@
    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Llamadas salientes (outbound)"}},
    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Soporte back office"}},
    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Soporte por correo y WhatsApp"}},
-   {"@type":"Offer","itemOffered":{"@type":"Service","name":"Reportería y monitoreo en tiempo real"}}]}}
+   {"@type":"Offer","itemOffered":{"@type":"Service","name":"Operaciones blended"}},
+   {"@type":"Offer","itemOffered":{"@type":"Service","name":"Telemercadeo y promoción de productos"}},
+   {"@type":"Offer","itemOffered":{"@type":"Service","name":"Captura y digitación de datos (data entry)"}},
+   {"@type":"Offer","itemOffered":{"@type":"Service","name":"Gestión de cobros y cobranzas"}},
+   {"@type":"Offer","itemOffered":{"@type":"Service","name":"Encuestas y estudios de mercado"}},
+   {"@type":"Offer","itemOffered":{"@type":"Service","name":"Soporte técnico"}},
+   {"@type":"Offer","itemOffered":{"@type":"Service","name":"Reportería y monitoreo en tiempo real"}}]},
+  "employee":[{"@type":"Person","name":"Alfredo Ventura A.","jobTitle":"Director Operativo de Contact Center"},{"@type":"Person","name":"Isailis Pujols","jobTitle":"Gerente de Operaciones de Contact Center"}]}
 ]}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -89,7 +97,7 @@
       </div>
       <div class="chip chip--years">
         <b><span data-count="30">30</span></b>
-        <span data-i18n-html="hero.years">años de experiencia<br>en contact centers</span>
+        <span data-i18n-html="hero.years">años de experiencia<br>en el mercado</span>
       </div>
     </div>
   </div>
@@ -158,7 +166,7 @@
         <div class="sol__body">
           <span class="sol__tag">Inbound</span>
           <h3 data-i18n="sol.1t">Atención de llamadas entrantes</h3>
-          <p data-i18n="sol.1d">Atendemos las llamadas de tus clientes: consultas, solicitudes y reclamaciones, con un equipo que conoce tu marca.</p>
+          <p data-i18n="sol.1d">Servicio al cliente: atendemos las llamadas de tus clientes, sus consultas, solicitudes y reclamaciones, con un equipo que conoce tu marca.</p>
         </div>
       </article>
       <article class="sol reveal">
@@ -166,7 +174,7 @@
         <div class="sol__body">
           <span class="sol__tag">Outbound</span>
           <h3 data-i18n="sol.2t">Llamadas salientes</h3>
-          <p data-i18n="sol.2d">Contactamos a tus clientes por ti: seguimiento, confirmaciones, encuestas y campañas, alineados a tus objetivos.</p>
+          <p data-i18n="sol.2d">Ventas y prospección: contactamos a tus clientes y prospectos por ti, con campañas alineadas a tus objetivos.</p>
         </div>
       </article>
       <article class="sol reveal">
@@ -193,6 +201,27 @@
           <p data-i18n="sol.5d">Te entregamos indicadores claros de tu operación, con herramientas de reporte y monitoreo en tiempo real para decidir con datos.</p>
         </div>
       </article>
+    </div>
+
+    <div class="ops reveal">
+      <div class="ops__head">
+        <h3 class="sub-head" data-i18n="ops.title">Nuestra experiencia operativa</h3>
+        <p class="lead" data-i18n="ops.lead">Ofrecemos soluciones integrales de outsourcing adaptadas a las necesidades de cada cliente:</p>
+      </div>
+      <ul class="ops__list">
+        <li data-i18n-html="ops.1">Llamadas inbound <span>(servicio al cliente)</span></li>
+        <li data-i18n-html="ops.2">Llamadas outbound <span>(ventas y prospección)</span></li>
+        <li data-i18n-html="ops.3">Operaciones blended <span>(inbound y outbound)</span></li>
+        <li data-i18n="ops.4">Telemercadeo y promoción de productos</li>
+        <li data-i18n="ops.5">Marcación predictiva y manual</li>
+        <li data-i18n-html="ops.6">Captura y digitación de datos <span>(data entry)</span></li>
+        <li data-i18n="ops.7">Gestión de cobros y cobranzas</li>
+        <li data-i18n="ops.8">Encuestas y estudios de mercado</li>
+        <li data-i18n="ops.9">Soporte técnico</li>
+        <li data-i18n="ops.10">Back office</li>
+        <li data-i18n="ops.11">Otros servicios especializados de contact center</li>
+      </ul>
+      <p class="ops__note" data-i18n="ops.note">Nuestro compromiso es brindar soluciones eficientes, innovadoras y orientadas a resultados, garantizando una experiencia excepcional para nuestros clientes y sus usuarios finales.</p>
     </div>
 
     <h3 class="sub-head reveal" data-i18n="svc.benefits">Beneficios de trabajar con nosotros</h3>
@@ -264,18 +293,18 @@
   </div>
 </section>
 
-<!-- SOBRE NOSOTROS — [[PENDIENTE: resumen del cliente]] texto provisional armado con los datos del cuestionario; reemplazar cuando lo envíen -->
+<!-- SOBRE NOSOTROS — texto enviado por el cliente (correo 2026-10-22) -->
 <section class="section about" id="nosotros">
   <div class="wrap about__in">
     <figure class="about__img reveal">
-      <img src="img/nosotros.webp" width="800" height="600" loading="lazy" alt="Equipo de Carioca trabajando en la oficina">
-      <figcaption class="about__badge"><b>30+</b><span data-i18n="ab.badge">años de experiencia</span></figcaption>
+      <img src="img/nosotros.webp" width="800" height="600" loading="lazy" alt="Equipo de trabajo en una oficina">
+      <figcaption class="about__badge"><b>30+</b><span data-i18n="ab.badge">años en el mercado</span></figcaption>
     </figure>
     <div class="about__copy">
       <p class="eyebrow reveal" data-i18n="ab.eyebrow">Sobre nosotros</p>
       <h2 class="h2 reveal" data-i18n="ab.title">Somos Carioca.</h2>
-      <p class="lead reveal" data-i18n="ab.p1">Carioca S.R.L. es un contact center que ofrece servicios de outsourcing a empresas que quieren mejorar la atención a sus clientes y reducir sus costos operativos.</p>
-      <p class="lead reveal" data-i18n="ab.p2">Trabajamos con recursos exclusivos para cada cliente, procesos de mejora continua y reportes en tiempo real, con el respaldo de 30 años de experiencia en el mercado de los contact centers.</p>
+      <p class="lead reveal" data-i18n="ab.p1">Carioca, S.R.L. es una empresa registrada en la República Dominicana con más de 30 años de experiencia en el mercado. Nos especializamos en servicios de remesas y en el sector comercial y financiero, respaldados por una eficiente red de sucursales distribuidas a nivel nacional.</p>
+      <p class="lead reveal" data-i18n="ab.p2">Como parte de nuestro crecimiento y compromiso con la innovación, hemos incursionado en el área de Call Center, ofreciendo servicios de outsourcing para clientes nacionales e internacionales. Contamos con una moderna plataforma de Contact Center y una solución tecnológica flexible y eficiente que nos permite brindar atención de calidad, optimizar procesos y adaptarnos a las necesidades específicas de cada cliente.</p>
       <div class="social reveal">
         <span data-i18n="ab.follow">Síguenos</span>
         <!-- [[PENDIENTE: enlaces de redes]] reemplazar href="#" por los perfiles reales -->
@@ -283,6 +312,30 @@
         <a href="#" data-pending aria-label="Facebook"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-fb"/></svg></a>
         <a href="#" data-pending aria-label="YouTube"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-yt"/></svg></a>
       </div>
+    </div>
+  </div>
+  <div class="wrap team">
+    <div class="team__head">
+      <h3 class="sub-head reveal" data-i18n="team.title">Nuestro equipo</h3>
+      <p class="lead reveal" data-i18n="team.lead">Contamos con un equipo de profesionales altamente calificados, con amplia experiencia en la gestión y operación de centros de contacto.</p>
+    </div>
+    <div class="team__grid">
+      <article class="person reveal">
+        <span class="person__av" aria-hidden="true">AV</span>
+        <div>
+          <h4>Alfredo Ventura A.</h4>
+          <p class="person__role" data-i18n="team.1r">Director Operativo de Contact Center</p>
+          <p data-i18n="team.1d">Más de 30 años de experiencia en la industria de call centers, liderando operaciones de servicio al cliente, ventas y gestión de equipos de alto desempeño.</p>
+        </div>
+      </article>
+      <article class="person reveal">
+        <span class="person__av" aria-hidden="true">IP</span>
+        <div>
+          <h4>Isailis Pujols</h4>
+          <p class="person__role" data-i18n="team.2r">Gerente de Operaciones de Contact Center</p>
+          <p data-i18n="team.2d">Más de 25 años de experiencia en la industria de call centers, especializada en la optimización de procesos, experiencia del cliente y administración operativa.</p>
+        </div>
+      </article>
     </div>
   </div>
 </section>
@@ -303,6 +356,9 @@
         <li class="reveal"><a href="tel:+18095353864" data-tel>
           <span class="channels__ic"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-phone"/></svg></span>
           <span><small data-i18n="ct.line">Línea de atención al cliente</small>+1 (809) 535-3864</span></a></li>
+        <li class="reveal"><a href="https://wa.me/18498581517?text=Hola%20Carioca%2C%20me%20interesa%20conocer%20sus%20servicios%20de%20call%20center." target="_blank" rel="noopener" data-wa>
+          <span class="channels__ic channels__ic--wa"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-wa"/></svg></span>
+          <span><small>WhatsApp</small>+1 (849) 858-1517</span></a></li>
         <li class="reveal"><a href="mailto:cariocacallcenter@carioca.com.do" data-mail>
           <span class="channels__ic channels__ic--soft"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-mail"/></svg></span>
           <span><small>Email</small>cariocacallcenter@carioca.com.do</span></a></li>
@@ -350,7 +406,7 @@
   <div class="wrap footer__in">
     <div class="footer__brand">
       <img src="img/logo.svg" alt="Carioca" width="170" height="26" loading="lazy">
-      <p data-i18n="foot.tag">Servicios de outsourcing de contact center, hechos a tu medida.</p>
+      <p data-i18n="foot.tag">Un contact center hecho a tu medida.</p>
       <div class="social social--foot">
         <a href="#" data-pending aria-label="Instagram"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-ig"/></svg></a>
         <a href="#" data-pending aria-label="Facebook"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-fb"/></svg></a>
@@ -373,8 +429,7 @@
   </div>
 </footer>
 
-<!-- Botón flotante: llamada a la línea de atención. [[PENDIENTE: WhatsApp]] cuando lo den, cambiar a wa.me con clase float-btn--wa, data-wa e ícono #i-wa (y el número en js/i18n.js) -->
-<a class="float-btn" href="tel:+18095353864" aria-label="Llamar a la línea de atención al cliente" data-tel><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-phone"/></svg></a>
+<a class="float-btn float-btn--wa" href="https://wa.me/18498581517?text=Hola%20Carioca%2C%20me%20interesa%20conocer%20sus%20servicios%20de%20call%20center." target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp" data-wa><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-wa"/></svg></a>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8zm8.4-18.2A11.8 11.8 0 0 0 1.9 17.9L.2 24l6.3-1.7A11.8 11.8 0 0 0 24 12a11.7 11.7 0 0 0-3.6-8.4z"/></symbol>
