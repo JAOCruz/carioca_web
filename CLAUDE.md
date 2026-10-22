@@ -24,6 +24,23 @@ Juan pidió (2026-10-19) no mostrar recuadros `[[PENDIENTE]]` en la página para
 
 Si falta algo, **no lo inventes** (ni clientes, ni cifras, ni testimonios, ni certificaciones). Deja un marcador visible `[[PENDIENTE: …]]` y anótalo en la lista "Preguntas para el cliente" al final de este archivo.
 
+## Feedback del cliente — correo de Isailis a Laura (2026-10-21, pantallazos en el Escritorio de Juan)
+Diseño y estructura aprobados en general. Cambios pedidos:
+- Hero: otra foto más alusiva a call center; fondo blanco o degradado menos oscuro (blanco y rojo, colores del logo); logo de Carioca más grande; agregar "Inicio" en el menú (antes de Servicios) y "Sobre nosotros" antes de Contacto con breve resumen (texto lo envían ellos).
+- Iconos de redes sociales (Instagram, Facebook, YouTube): enlaces los envían ellos. WhatsApp también lo envían (enlace en el botón flotante).
+- Eyebrow del hero: "SERVICIOS DE OUTSOURCING". Lead: "…Reducimos tus costos operativos, mientras elevamos la calidad de tu servicio con el respaldo de 30 años de experiencia."
+- Pilares + El reto: más interactivo, títulos/eyebrows más grandes, animación o imagen en la comparación.
+- Servicios: título "Un contact center hecho a tu medida"; lead "Nos encargamos de la gestión operativa de su atención al cliente para que su equipo se enfoque en el núcleo estratégico del negocio". Agregar soluciones con breve descripción e imágenes: soporte back office, soporte vía correo / WhatsApp, inbound, outbound, reportería.
+- 12 etapas: hover que cambie de color y despliegue una breve descripción de cada etapa (descripciones a redactar y validar).
+- "Por qué Carioca": quitar "pequeño" (usar flexibilidad / adaptabilidad); encabezado más grande.
+- Proceso lead: "Antes de implementar, nos reunimos contigo para definir el contrato, las especificaciones operacionales y las metas a corto y largo plazo."
+- Contacto: evitar negro (ícono email negro → otro), imágenes más visuales, eyebrow más grande; mensaje "propuesta ajustada a sus necesidades".
+- Footer: logo original rojo y blanco; fondo negro → degradado menos intenso.
+- Ojo: mezclan "tu" y "su" en sus textos; definir uno (el sitio usa "tu").
+
+**v2 aplicada (2026-10-22):** hero y sitio en blanco/rojo (sin fondos negros), logo más grande, menú con Inicio y Sobre nosotros, textos corregidos, 5 soluciones con foto, "El reto" con imagen y animación, etapas con descripción al pasar el cursor (en móvil siempre visibles), "pequeño" → flexibilidad, contacto con foto e íconos rojos, footer con degradado rosado y logo original, iconos de redes. Se mantuvo "tú".
+Provisional hasta que el cliente envíe: fotos (Unsplash, ver `brand/CREDITOS-FOTOS.md`), texto de Sobre nosotros (armado con datos del cuestionario), descripciones de las 12 etapas (redactadas por Arcova, validar), enlaces de Instagram/Facebook/YouTube (`href="#"` con `data-pending`), WhatsApp y dirección.
+
 ## Alcance (US$650 = sencillo)
 - **Una sola página (landing)** con anclas, más una página de Gracias del formulario. Secciones sugeridas: Hero (qué hacen + CTA), Servicios, Por qué nosotros / cómo trabajamos, Industrias o casos (solo si hay datos reales), Contacto (formulario + WhatsApp + mapa si tienen oficina), Footer.
 - Bilingüe ES/EN solo si el cliente lo pide (los call centers en RD suelen atender en inglés; es probable que lo quieran).
@@ -61,7 +78,8 @@ brand/           ← logo y material original del cliente (no se publica)
 4. Tras la aprobación, producción, dominio y verificación (SEO, formulario, analytics).
 
 ## Preguntas para el cliente
-- Lista concreta de servicios (atención entrante, llamadas salientes/ventas, cobros, soporte técnico, chat/email/redes…) y cuál destacar.
+- Validar descripciones de los 5 servicios y de las 12 etapas (redactadas por Arcova).
+- Resumen para "Sobre nosotros" y enlaces de Instagram, Facebook y YouTube.
 - Número de WhatsApp (el 809-535-3864 es la línea de atención, solo llamadas).
 - Dirección exacta de la oficina (o enlace de Google Maps) para la sección Ubicación.
 - Casos de éxito reales (cliente o sector, resultado, permiso para mencionarlos) y logos de clientes si se pueden mostrar.

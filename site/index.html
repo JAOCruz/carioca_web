@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Carioca | Outsourcing de Call Center y Contact Center</title>
-<meta name="description" content="Carioca S.R.L.: outsourcing de call center con equipo exclusivo, confidencialidad y 30 años de experiencia. Reduce costos operativos y eleva la calidad de tu servicio.">
+<title>Carioca | Servicios de Outsourcing de Call Center y Contact Center</title>
+<meta name="description" content="Carioca S.R.L.: servicios de outsourcing de contact center. Inbound, outbound, back office, soporte por correo y WhatsApp y reportería, con 30 años de experiencia.">
 <!-- DEMO: quitar noindex al lanzar en el dominio final -->
 <meta name="robots" content="noindex,nofollow">
 <!-- [[PENDIENTE: dominio]] al tenerlo, añadir canonical, og:url y URL absoluta en og:image -->
@@ -12,28 +12,33 @@
 <meta property="og:site_name" content="Carioca">
 <meta property="og:locale" content="es_DO">
 <meta property="og:locale:alternate" content="en_US">
-<meta property="og:title" content="Carioca | Outsourcing de Call Center">
-<meta property="og:description" content="Tu operación de contact center con equipo exclusivo, confidencialidad y 30 años de experiencia.">
+<meta property="og:title" content="Carioca | Servicios de Outsourcing de Contact Center">
+<meta property="og:description" content="Un contact center hecho a tu medida: inbound, outbound, back office, soporte por correo y WhatsApp y reportería.">
 <meta property="og:image" content="img/og.jpg">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#262526">
+<meta name="theme-color" content="#ffffff">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
  {"@type":"ProfessionalService","@id":"#business","name":"Carioca S.R.L.","alternateName":"Carioca Call Center",
-  "description":"Outsourcing de call center y contact center: equipo exclusivo para cada cliente, confidencialidad de la información, reportes y monitoreo en tiempo real, y 30 años de experiencia en el mercado.",
+  "description":"Servicios de outsourcing de contact center: atención de llamadas entrantes (inbound), llamadas salientes (outbound), soporte back office, soporte por correo y WhatsApp y reportería en tiempo real, con 30 años de experiencia en el mercado.",
   "email":"cariocacallcenter@carioca.com.do","telephone":"+1-809-535-3864",
   "address":{"@type":"PostalAddress","addressCountry":"DO"},
   "knowsLanguage":["es","en"],
-  "makesOffer":{"@type":"Offer","itemOffered":{"@type":"Service","name":"Outsourcing de Call Center / Contact Center","serviceType":"Call center outsourcing"}}}
+  "hasOfferCatalog":{"@type":"OfferCatalog","name":"Servicios de outsourcing","itemListElement":[
+   {"@type":"Offer","itemOffered":{"@type":"Service","name":"Atención de llamadas entrantes (inbound)"}},
+   {"@type":"Offer","itemOffered":{"@type":"Service","name":"Llamadas salientes (outbound)"}},
+   {"@type":"Offer","itemOffered":{"@type":"Service","name":"Soporte back office"}},
+   {"@type":"Offer","itemOffered":{"@type":"Service","name":"Soporte por correo y WhatsApp"}},
+   {"@type":"Offer","itemOffered":{"@type":"Service","name":"Reportería y monitoreo en tiempo real"}}]}}
 ]}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="img/agentes-640.webp" imagesrcset="img/agentes-640.webp 640w, img/agentes.webp 948w" imagesizes="(min-width: 960px) 520px, 100vw">
+<link rel="preload" as="image" href="img/hero-640.webp" imagesrcset="img/hero-640.webp 640w, img/hero.webp 1000w" imagesizes="(min-width: 960px) 540px, 100vw">
 <link rel="stylesheet" href="css/styles.css">
 <script>try{var l=new URLSearchParams(location.search).get('lang')||localStorage.getItem('carioca-lang');if(l==='en')document.documentElement.lang='en'}catch(e){}</script>
 </head>
@@ -42,11 +47,13 @@
 
 <header class="nav" id="top">
   <div class="wrap nav__in">
-    <a class="nav__logo" href="#top" aria-label="Carioca — inicio"><img src="img/logo.svg" alt="Carioca" width="148" height="23"></a>
+    <a class="nav__logo" href="#inicio" aria-label="Carioca — inicio"><img src="img/logo.svg" alt="Carioca" width="190" height="29"></a>
     <nav class="nav__links" id="menu" aria-label="Principal">
+      <a href="#inicio" data-i18n="nav.home">Inicio</a>
       <a href="#servicios" data-i18n="nav.services">Servicios</a>
       <a href="#por-que" data-i18n="nav.why">Por qué Carioca</a>
       <a href="#proceso" data-i18n="nav.process">Cómo trabajamos</a>
+      <a href="#nosotros" data-i18n="nav.about">Sobre nosotros</a>
       <a href="#contacto" data-i18n="nav.contact">Contacto</a>
     </nav>
     <div class="nav__actions">
@@ -59,13 +66,13 @@
 
 <main id="main">
 <!-- HERO -->
-<section class="hero">
+<section class="hero" id="inicio">
   <div class="hero__bg" aria-hidden="true"><canvas class="hero__wave"></canvas></div>
   <div class="wrap hero__in">
     <div class="hero__copy">
-      <p class="eyebrow eyebrow--light reveal"><img class="eyebrow__mark" src="img/mark.svg" alt="" width="22" height="18"><span data-i18n="hero.eyebrow">Outsourcing de Call Center</span></p>
+      <p class="eyebrow eyebrow--mark reveal"><img class="eyebrow__mark" src="img/mark.svg" alt="" width="24" height="19"><span data-i18n="hero.eyebrow">Servicios de outsourcing</span></p>
       <h1 class="hero__title reveal" data-i18n-html="hero.title">Tu contact center, <em>en manos expertas.</em></h1>
-      <p class="hero__lead reveal" data-i18n="hero.lead">Atendemos a tus clientes con un equipo exclusivo para tu operación. Reducimos tus costos operativos mientras elevamos la calidad de tu servicio, con el respaldo de 30 años de experiencia.</p>
+      <p class="hero__lead reveal" data-i18n="hero.lead">Atendemos a tus clientes con un equipo exclusivo para tu operación. Reducimos tus costos operativos, mientras elevamos la calidad de tu servicio con el respaldo de 30 años de experiencia.</p>
       <div class="hero__ctas reveal">
         <a class="btn btn--red" href="#contacto" data-i18n="hero.cta">Solicitar propuesta</a>
         <a class="btn btn--ghost" href="tel:+18095353864" data-tel><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-phone"/></svg><span data-i18n="hero.call">Llámanos: (809) 535-3864</span></a>
@@ -73,7 +80,7 @@
     </div>
     <div class="hero__visual reveal">
       <figure class="hero__photo">
-        <img src="img/agentes-640.webp" srcset="img/agentes-640.webp 640w, img/agentes.webp 948w" sizes="(min-width: 960px) 520px, 100vw" width="948" height="669" alt="Agentes de call center atendiendo llamadas con auriculares" fetchpriority="high">
+        <img src="img/hero-640.webp" srcset="img/hero-640.webp 640w, img/hero.webp 1000w" sizes="(min-width: 960px) 540px, 100vw" width="1000" height="750" alt="Agente de contact center sonriendo con auriculares en su puesto de trabajo" fetchpriority="high">
       </figure>
       <div class="chip chip--call" aria-hidden="true">
         <span class="chip__pulse"></span>
@@ -91,10 +98,10 @@
 <!-- PILARES -->
 <section class="pillars" aria-label="Lo que nos define">
   <div class="wrap pillars__in">
-    <div class="pillar reveal"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-users"/></svg><p data-i18n-html="pill.1"><b>Equipo exclusivo</b> dedicado a tu operación</p></div>
-    <div class="pillar reveal"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-lock"/></svg><p data-i18n-html="pill.2"><b>Confidencialidad</b> de tu información</p></div>
-    <div class="pillar reveal"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-chart"/></svg><p data-i18n-html="pill.3"><b>Reportes y monitoreo</b> en tiempo real</p></div>
-    <div class="pillar reveal"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-award"/></svg><p data-i18n-html="pill.4"><b>30 años</b> de experiencia en el mercado</p></div>
+    <div class="pillar reveal"><span class="pillar__ic"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-users"/></svg></span><p data-i18n-html="pill.1"><b>Equipo exclusivo</b> dedicado a tu operación</p></div>
+    <div class="pillar reveal"><span class="pillar__ic"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-lock"/></svg></span><p data-i18n-html="pill.2"><b>Confidencialidad</b> de tu información</p></div>
+    <div class="pillar reveal"><span class="pillar__ic"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-chart"/></svg></span><p data-i18n-html="pill.3"><b>Reportes y monitoreo</b> en tiempo real</p></div>
+    <div class="pillar reveal"><span class="pillar__ic"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-award"/></svg></span><p data-i18n-html="pill.4"><b>30 años</b> de experiencia en el mercado</p></div>
   </div>
 </section>
 
@@ -102,9 +109,14 @@
 <section class="section problem">
   <div class="wrap problem__in">
     <div class="problem__head">
-      <p class="eyebrow reveal" data-i18n="prob.eyebrow">El reto</p>
-      <h2 class="h2 reveal" data-i18n="prob.title">Cuando atender clientes compite con hacer crecer tu negocio.</h2>
-      <p class="lead reveal" data-i18n="prob.lead">Mantener un departamento de atención propio cuesta caro y distrae a tu equipo de lo estratégico. Estas son las señales más comunes:</p>
+      <div class="problem__text">
+        <p class="eyebrow reveal" data-i18n="prob.eyebrow">El reto</p>
+        <h2 class="h2 reveal" data-i18n="prob.title">Cuando atender clientes compite con hacer crecer tu negocio.</h2>
+        <p class="lead reveal" data-i18n="prob.lead">Mantener un departamento de atención propio cuesta caro y distrae a tu equipo de lo estratégico. Estas son las señales más comunes:</p>
+      </div>
+      <figure class="problem__img reveal">
+        <img src="img/reto.webp" width="720" height="540" loading="lazy" alt="Agente atendiendo una llamada frente a varias pantallas en un centro de operaciones">
+      </figure>
     </div>
     <div class="compare">
       <div class="compare__col compare__col--pain reveal">
@@ -117,8 +129,9 @@
           <li data-i18n="prob.p5">La calidad del servicio varía y genera desconfianza.</li>
         </ul>
       </div>
+      <div class="compare__arrow reveal" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
       <div class="compare__col compare__col--gain reveal">
-        <h3 data-i18n="prob.gainT">Con Carioca</h3>
+        <h3><img src="img/mark-white.svg" alt="" width="26" height="21" class="compare__mark"><span data-i18n="prob.gainT">Con Carioca</span></h3>
         <ul>
           <li data-i18n="prob.g1">Mejores niveles de servicio y de calidad.</li>
           <li data-i18n="prob.g2">Horarios de atención ajustados a tus clientes.</li>
@@ -131,14 +144,58 @@
   </div>
 </section>
 
-<!-- SERVICIOS / BENEFICIOS -->
+<!-- SERVICIOS -->
 <section class="section services" id="servicios">
   <div class="wrap">
     <div class="sec-head">
       <p class="eyebrow reveal" data-i18n="svc.eyebrow">Servicios</p>
-      <h2 class="h2 reveal" data-i18n="svc.title">Outsourcing de contact center, hecho a la medida.</h2>
-      <p class="lead reveal" data-i18n="svc.lead">Nos encargamos de la gestión operacional de tu atención al cliente para que tu equipo se enfoque en el núcleo estratégico del negocio.</p>
+      <h2 class="h2 reveal" data-i18n="svc.title">Un contact center hecho a tu medida.</h2>
+      <p class="lead reveal" data-i18n="svc.lead">Nos encargamos de la gestión operativa de tu atención al cliente para que tu equipo se enfoque en el núcleo estratégico del negocio.</p>
     </div>
+    <div class="solutions">
+      <article class="sol reveal">
+        <figure class="sol__img"><img src="img/sol-inbound.webp" width="720" height="450" loading="lazy" alt="Agentes con auriculares atendiendo llamadas entrantes"></figure>
+        <div class="sol__body">
+          <span class="sol__tag">Inbound</span>
+          <h3 data-i18n="sol.1t">Atención de llamadas entrantes</h3>
+          <p data-i18n="sol.1d">Atendemos las llamadas de tus clientes: consultas, solicitudes y reclamaciones, con un equipo que conoce tu marca.</p>
+        </div>
+      </article>
+      <article class="sol reveal">
+        <figure class="sol__img"><img src="img/sol-outbound.webp" width="720" height="450" loading="lazy" alt="Equipo de agentes con auriculares realizando llamadas"></figure>
+        <div class="sol__body">
+          <span class="sol__tag">Outbound</span>
+          <h3 data-i18n="sol.2t">Llamadas salientes</h3>
+          <p data-i18n="sol.2d">Contactamos a tus clientes por ti: seguimiento, confirmaciones, encuestas y campañas, alineados a tus objetivos.</p>
+        </div>
+      </article>
+      <article class="sol reveal">
+        <figure class="sol__img"><img src="img/sol-backoffice.webp" width="720" height="450" loading="lazy" alt="Equipo trabajando en computadoras en una oficina"></figure>
+        <div class="sol__body">
+          <span class="sol__tag">Back office</span>
+          <h3 data-i18n="sol.3t">Soporte back office</h3>
+          <p data-i18n="sol.3d">Nos encargamos de las tareas administrativas y de soporte que sostienen tu operación, para que tu equipo se enfoque en lo estratégico.</p>
+        </div>
+      </article>
+      <article class="sol reveal">
+        <figure class="sol__img"><img src="img/sol-chat.webp" width="720" height="450" loading="lazy" alt="Conversación de soporte por chat en una pantalla junto a un teléfono"></figure>
+        <div class="sol__body">
+          <span class="sol__tag" data-i18n="sol.4tag">Correo y WhatsApp</span>
+          <h3 data-i18n="sol.4t">Soporte por correo y WhatsApp</h3>
+          <p data-i18n="sol.4d">Respondemos a tus clientes por escrito, por correo electrónico y WhatsApp, con el tono y los tiempos de respuesta que acordemos contigo.</p>
+        </div>
+      </article>
+      <article class="sol reveal">
+        <figure class="sol__img"><img src="img/sol-reportes.webp" width="720" height="450" loading="lazy" alt="Laptop mostrando un panel de indicadores y gráficas"></figure>
+        <div class="sol__body">
+          <span class="sol__tag" data-i18n="sol.5tag">Reportería</span>
+          <h3 data-i18n="sol.5t">Reportes y monitoreo en tiempo real</h3>
+          <p data-i18n="sol.5d">Te entregamos indicadores claros de tu operación, con herramientas de reporte y monitoreo en tiempo real para decidir con datos.</p>
+        </div>
+      </article>
+    </div>
+
+    <h3 class="sub-head reveal" data-i18n="svc.benefits">Beneficios de trabajar con nosotros</h3>
     <div class="cards">
       <article class="card reveal">
         <span class="card__icon"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-coin"/></svg></span>
@@ -161,7 +218,6 @@
         <p data-i18n="svc.4d">Recursos exclusivos para tu cuenta, que garantizan la confidencialidad de la información que manejamos.</p>
       </article>
     </div>
-    <!-- [[PENDIENTE: lista de servicios concretos y cuál destacar]] (ver CLAUDE.md) -->
   </div>
 </section>
 
@@ -171,40 +227,63 @@
   <div class="wrap why__in">
     <div class="why__head">
       <p class="eyebrow eyebrow--light reveal" data-i18n="why.eyebrow">Por qué Carioca</p>
-      <h2 class="h2 h2--light reveal" data-i18n-html="why.title">Un centro pequeño.<br><em>Una dedicación completa.</em></h2>
-      <p class="lead lead--light reveal" data-i18n="why.lead">Al ser un contact center pequeño, tu operación no es una cuenta más: recibe atención completa, recursos exclusivos y mayor privacidad.</p>
+      <h2 class="h2 h2--light reveal" data-i18n-html="why.title">Flexibles para adaptarnos.<br><em>Dedicados a tu operación.</em></h2>
+      <p class="lead lead--light reveal" data-i18n="why.lead">Nos adaptamos a la medida de cada cliente: tu operación no es una cuenta más, recibe atención completa, recursos exclusivos y mayor privacidad.</p>
     </div>
     <div class="why__grid">
-      <div class="why__item reveal"><span class="why__n">01</span><h3 data-i18n="why.1t">Dedicación completa</h3><p data-i18n="why.1d">Un equipo enfocado solo en tu cuenta, que conoce tu marca y a tus clientes.</p></div>
-      <div class="why__item reveal"><span class="why__n">02</span><h3 data-i18n="why.2t">Privacidad de la información</h3><p data-i18n="why.2d">Recursos exclusivos por cliente para garantizar la confidencialidad de tus datos.</p></div>
-      <div class="why__item reveal"><span class="why__n">03</span><h3 data-i18n="why.3t">Innovación y eficiencia</h3><p data-i18n="why.3d">Compromiso con la mejora de procesos y con un seguimiento constante a la calidad del servicio.</p></div>
-      <div class="why__item reveal"><span class="why__n">04</span><h3 data-i18n="why.4t">30 años de experiencia</h3><p data-i18n="why.4d">Tres décadas en el mercado de los contact centers respaldan cada operación que asumimos.</p></div>
+      <div class="why__item reveal"><span class="why__n">01</span><h3 data-i18n="why.1t">Flexibilidad y adaptabilidad</h3><p data-i18n="why.1d">Ajustamos el equipo, los horarios y los procesos a las necesidades y a los picos de tu operación.</p></div>
+      <div class="why__item reveal"><span class="why__n">02</span><h3 data-i18n="why.2t">Dedicación completa</h3><p data-i18n="why.2d">Un equipo enfocado solo en tu cuenta, que conoce tu marca y a tus clientes.</p></div>
+      <div class="why__item reveal"><span class="why__n">03</span><h3 data-i18n="why.3t">Privacidad de la información</h3><p data-i18n="why.3d">Recursos exclusivos por cliente para garantizar la confidencialidad de tus datos.</p></div>
+      <div class="why__item reveal"><span class="why__n">04</span><h3 data-i18n="why.4t">Innovación y eficiencia</h3><p data-i18n="why.4d">Compromiso con la mejora de procesos y con un seguimiento constante a la calidad del servicio.</p></div>
     </div>
   </div>
 </section>
 
-<!-- PROCESO -->
+<!-- PROCESO — descripciones de cada etapa redactadas por Arcova a partir del cuestionario: validar con el cliente -->
 <section class="section process" id="proceso">
   <div class="wrap">
     <div class="sec-head">
       <p class="eyebrow reveal" data-i18n="proc.eyebrow">Cómo trabajamos</p>
       <h2 class="h2 reveal" data-i18n="proc.title">Un método claro, de la primera reunión a los resultados.</h2>
-      <p class="lead reveal" data-i18n="proc.lead">Antes de implementar, definimos contigo en reuniones previas el contrato, las especificaciones operacionales y las metas a corto y largo plazo. Luego seguimos 12 etapas:</p>
+      <p class="lead reveal" data-i18n="proc.lead">Antes de implementar, nos reunimos contigo para definir el contrato, las especificaciones operacionales y las metas a corto y largo plazo. Luego seguimos 12 etapas:</p>
     </div>
     <ol class="steps">
-      <li class="step reveal"><span>01</span><b data-i18n="st.1">Planificación</b></li>
-      <li class="step reveal"><span>02</span><b data-i18n="st.2">Organización</b></li>
-      <li class="step reveal"><span>03</span><b data-i18n="st.3">Implementación</b></li>
-      <li class="step reveal"><span>04</span><b data-i18n="st.4">Ejecución</b></li>
-      <li class="step reveal"><span>05</span><b data-i18n="st.5">Revisión</b></li>
-      <li class="step reveal"><span>06</span><b data-i18n="st.6">Análisis</b></li>
-      <li class="step reveal"><span>07</span><b data-i18n="st.7">Retroalimentación</b></li>
-      <li class="step reveal"><span>08</span><b data-i18n="st.8">Seguimiento</b></li>
-      <li class="step reveal"><span>09</span><b data-i18n="st.9">Evaluación</b></li>
-      <li class="step reveal"><span>10</span><b data-i18n="st.10">Medición de resultados</b></li>
-      <li class="step reveal"><span>11</span><b data-i18n="st.11">Conclusiones</b></li>
-      <li class="step reveal"><span>12</span><b data-i18n="st.12">Estandarización</b></li>
+      <li class="step reveal" tabindex="0"><span class="step__n">01</span><b data-i18n="st.1">Planificación</b><p data-i18n="sd.1">Definimos contigo las metas, el alcance y los recursos de la operación.</p></li>
+      <li class="step reveal" tabindex="0"><span class="step__n">02</span><b data-i18n="st.2">Organización</b><p data-i18n="sd.2">Asignamos el equipo, los horarios y las herramientas de trabajo.</p></li>
+      <li class="step reveal" tabindex="0"><span class="step__n">03</span><b data-i18n="st.3">Implementación</b><p data-i18n="sd.3">Configuramos los procesos, los guiones y los canales de atención.</p></li>
+      <li class="step reveal" tabindex="0"><span class="step__n">04</span><b data-i18n="st.4">Ejecución</b><p data-i18n="sd.4">Ponemos en marcha la operación con tu equipo dedicado.</p></li>
+      <li class="step reveal" tabindex="0"><span class="step__n">05</span><b data-i18n="st.5">Revisión</b><p data-i18n="sd.5">Supervisamos la calidad del servicio día a día.</p></li>
+      <li class="step reveal" tabindex="0"><span class="step__n">06</span><b data-i18n="st.6">Análisis</b><p data-i18n="sd.6">Estudiamos los indicadores y los reportes de desempeño.</p></li>
+      <li class="step reveal" tabindex="0"><span class="step__n">07</span><b data-i18n="st.7">Retroalimentación</b><p data-i18n="sd.7">Compartimos los hallazgos contigo y con nuestros agentes.</p></li>
+      <li class="step reveal" tabindex="0"><span class="step__n">08</span><b data-i18n="st.8">Seguimiento</b><p data-i18n="sd.8">Acompañamos los ajustes acordados hasta cumplirlos.</p></li>
+      <li class="step reveal" tabindex="0"><span class="step__n">09</span><b data-i18n="st.9">Evaluación</b><p data-i18n="sd.9">Medimos el avance frente a las metas definidas.</p></li>
+      <li class="step reveal" tabindex="0"><span class="step__n">10</span><b data-i18n="st.10">Medición de resultados</b><p data-i18n="sd.10">Te presentamos los resultados con datos claros.</p></li>
+      <li class="step reveal" tabindex="0"><span class="step__n">11</span><b data-i18n="st.11">Conclusiones</b><p data-i18n="sd.11">Identificamos aprendizajes y oportunidades de mejora.</p></li>
+      <li class="step reveal" tabindex="0"><span class="step__n">12</span><b data-i18n="st.12">Estandarización</b><p data-i18n="sd.12">Convertimos lo que funciona en procesos estables.</p></li>
     </ol>
+  </div>
+</section>
+
+<!-- SOBRE NOSOTROS — [[PENDIENTE: resumen del cliente]] texto provisional armado con los datos del cuestionario; reemplazar cuando lo envíen -->
+<section class="section about" id="nosotros">
+  <div class="wrap about__in">
+    <figure class="about__img reveal">
+      <img src="img/nosotros.webp" width="800" height="600" loading="lazy" alt="Equipo de Carioca trabajando en la oficina">
+      <figcaption class="about__badge"><b>30+</b><span data-i18n="ab.badge">años de experiencia</span></figcaption>
+    </figure>
+    <div class="about__copy">
+      <p class="eyebrow reveal" data-i18n="ab.eyebrow">Sobre nosotros</p>
+      <h2 class="h2 reveal" data-i18n="ab.title">Somos Carioca.</h2>
+      <p class="lead reveal" data-i18n="ab.p1">Carioca S.R.L. es un contact center que ofrece servicios de outsourcing a empresas que quieren mejorar la atención a sus clientes y reducir sus costos operativos.</p>
+      <p class="lead reveal" data-i18n="ab.p2">Trabajamos con recursos exclusivos para cada cliente, procesos de mejora continua y reportes en tiempo real, con el respaldo de 30 años de experiencia en el mercado de los contact centers.</p>
+      <div class="social reveal">
+        <span data-i18n="ab.follow">Síguenos</span>
+        <!-- [[PENDIENTE: enlaces de redes]] reemplazar href="#" por los perfiles reales -->
+        <a href="#" data-pending aria-label="Instagram"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-ig"/></svg></a>
+        <a href="#" data-pending aria-label="Facebook"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-fb"/></svg></a>
+        <a href="#" data-pending aria-label="YouTube"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-yt"/></svg></a>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -216,13 +295,16 @@
     <div class="contact__info">
       <p class="eyebrow reveal" data-i18n="ct.eyebrow">Contacto</p>
       <h2 class="h2 reveal" data-i18n="ct.title">Hablemos de tu operación.</h2>
-      <p class="lead reveal" data-i18n="ct.lead">Cuéntanos qué necesitas y te preparamos una propuesta ajustada a tus metas.</p>
+      <p class="lead reveal" data-i18n="ct.lead">Cuéntanos qué necesitas y te preparamos una propuesta ajustada a tus necesidades.</p>
+      <figure class="contact__img reveal">
+        <img src="img/contacto.webp" width="720" height="540" loading="lazy" alt="Agente de atención al cliente saludando con auriculares frente a su laptop">
+      </figure>
       <ul class="channels">
         <li class="reveal"><a href="tel:+18095353864" data-tel>
-          <span class="channels__ic channels__ic--red"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-phone"/></svg></span>
+          <span class="channels__ic"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-phone"/></svg></span>
           <span><small data-i18n="ct.line">Línea de atención al cliente</small>+1 (809) 535-3864</span></a></li>
         <li class="reveal"><a href="mailto:cariocacallcenter@carioca.com.do" data-mail>
-          <span class="channels__ic"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-mail"/></svg></span>
+          <span class="channels__ic channels__ic--soft"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-mail"/></svg></span>
           <span><small>Email</small>cariocacallcenter@carioca.com.do</span></a></li>
       </ul>
     </div>
@@ -230,6 +312,7 @@
       <input type="hidden" name="form-name" value="contacto">
       <input type="hidden" name="idioma" value="es">
       <p class="hp"><label>No llenar: <input name="empresa_web" tabindex="-1" autocomplete="off"></label></p>
+      <h3 class="form__title" data-i18n="f.title">Solicita tu propuesta</h3>
       <div class="field"><label for="f-nombre" data-i18n="f.name">Nombre</label><input id="f-nombre" name="nombre" autocomplete="name" required></div>
       <div class="field"><label for="f-empresa" data-i18n="f.company">Empresa</label><input id="f-empresa" name="empresa" autocomplete="organization" required></div>
       <div class="field"><label for="f-email" data-i18n="f.email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
@@ -242,16 +325,16 @@
 </section>
 
 <!-- UBICACIÓN — [[PENDIENTE: dirección real]] la ubicación es provisional (centro de Santo Domingo).
-     Para cambiarla: reemplazar MAPS_Q en el src del iframe y en el href del botón. -->
+     Para cambiarla: reemplazar la búsqueda en el src del iframe y en el href del botón. -->
 <section class="section location" id="ubicacion">
   <div class="wrap location__in">
     <div class="location__info">
       <p class="eyebrow reveal" data-i18n="loc.eyebrow">Ubicación</p>
       <h2 class="h2 reveal" data-i18n="loc.title">Visítanos.</h2>
       <ul class="location__list">
-        <li class="reveal"><span class="channels__ic"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-pin"/></svg></span>
+        <li class="reveal"><span class="channels__ic channels__ic--soft"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-pin"/></svg></span>
           <span><small data-i18n="loc.addrL">Dirección</small><span data-i18n="loc.addr">Santo Domingo, República Dominicana</span></span></li>
-        <li class="reveal"><span class="channels__ic channels__ic--red"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-phone"/></svg></span>
+        <li class="reveal"><span class="channels__ic"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-phone"/></svg></span>
           <span><small data-i18n="ct.line">Línea de atención al cliente</small><a href="tel:+18095353864" data-tel>+1 (809) 535-3864</a></span></li>
       </ul>
       <a class="btn btn--red reveal" href="https://www.google.com/maps/search/?api=1&amp;query=Santo+Domingo%2C+Rep%C3%BAblica+Dominicana" target="_blank" rel="noopener" data-maps><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-pin"/></svg><span data-i18n="loc.cta">Abrir en Google Maps</span></a>
@@ -266,13 +349,20 @@
 <footer class="footer">
   <div class="wrap footer__in">
     <div class="footer__brand">
-      <img src="img/logo-white.svg" alt="Carioca" width="148" height="23" loading="lazy">
-      <p data-i18n="foot.tag">Outsourcing de call center con dedicación completa.</p>
+      <img src="img/logo.svg" alt="Carioca" width="170" height="26" loading="lazy">
+      <p data-i18n="foot.tag">Servicios de outsourcing de contact center, hechos a tu medida.</p>
+      <div class="social social--foot">
+        <a href="#" data-pending aria-label="Instagram"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-ig"/></svg></a>
+        <a href="#" data-pending aria-label="Facebook"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-fb"/></svg></a>
+        <a href="#" data-pending aria-label="YouTube"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-yt"/></svg></a>
+      </div>
     </div>
     <nav class="footer__links" aria-label="Pie de página">
+      <a href="#inicio" data-i18n="nav.home">Inicio</a>
       <a href="#servicios" data-i18n="nav.services">Servicios</a>
       <a href="#por-que" data-i18n="nav.why">Por qué Carioca</a>
       <a href="#proceso" data-i18n="nav.process">Cómo trabajamos</a>
+      <a href="#nosotros" data-i18n="nav.about">Sobre nosotros</a>
       <a href="#contacto" data-i18n="nav.contact">Contacto</a>
       <a href="#ubicacion" data-i18n="loc.eyebrow">Ubicación</a>
     </nav>
@@ -283,11 +373,14 @@
   </div>
 </footer>
 
-<!-- Botón flotante: llamada a la línea de atención. [[PENDIENTE: WhatsApp]] cuando lo den, cambiar a wa.me con clase float-btn--wa, data-wa e ícono #i-wa -->
+<!-- Botón flotante: llamada a la línea de atención. [[PENDIENTE: WhatsApp]] cuando lo den, cambiar a wa.me con clase float-btn--wa, data-wa e ícono #i-wa (y el número en js/i18n.js) -->
 <a class="float-btn" href="tel:+18095353864" aria-label="Llamar a la línea de atención al cliente" data-tel><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-phone"/></svg></a>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8zm8.4-18.2A11.8 11.8 0 0 0 1.9 17.9L.2 24l6.3-1.7A11.8 11.8 0 0 0 24 12a11.7 11.7 0 0 0-3.6-8.4z"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></g></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M13.5 21v-7.5H16l.4-3h-2.9V8.6c0-.9.3-1.5 1.5-1.5h1.5V4.4c-.3 0-1.2-.1-2.2-.1-2.2 0-3.7 1.3-3.7 3.8v2.4H8v3h2.6V21h2.9z"/></symbol>
+  <symbol id="i-yt" viewBox="0 0 24 24"><path fill="currentColor" d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8zM10 15V9l5.2 3L10 15z"/></symbol>
   <symbol id="i-users" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.6-3.6 3.2-5.5 6.5-5.5s5.9 1.9 6.5 5.5"/><path d="M16 4.8a3.5 3.5 0 0 1 0 6.4M18 14.8c2 .7 3.2 2.5 3.5 5.2"/></g></symbol>
   <symbol id="i-lock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10.5" width="16" height="10.5" rx="2.5"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3M12 15v2"/></g></symbol>
   <symbol id="i-chart" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 6-7"/></g></symbol>

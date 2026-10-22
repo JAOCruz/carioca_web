@@ -66,10 +66,10 @@
   if (cv && cv.getContext) {
     var ctx = cv.getContext('2d'), w, h, dpr, running = true;
     var lines = [
-      { amp: 0.34, freq: 1.6, speed: 0.9, color: 'rgba(236,32,37,.9)', width: 2.2 },
-      { amp: 0.24, freq: 2.3, speed: -0.7, color: 'rgba(255,255,255,.35)', width: 1.4 },
-      { amp: 0.18, freq: 3.1, speed: 1.3, color: 'rgba(236,32,37,.45)', width: 1.2 },
-      { amp: 0.12, freq: 4.2, speed: -1.1, color: 'rgba(255,255,255,.18)', width: 1 }
+      { amp: 0.34, freq: 1.6, speed: 0.9, color: 'rgba(236,32,37,.75)', width: 2.2 },
+      { amp: 0.24, freq: 2.3, speed: -0.7, color: 'rgba(38,37,38,.14)', width: 1.4 },
+      { amp: 0.18, freq: 3.1, speed: 1.3, color: 'rgba(236,32,37,.35)', width: 1.2 },
+      { amp: 0.12, freq: 4.2, speed: -1.1, color: 'rgba(38,37,38,.08)', width: 1 }
     ];
     var size = function () {
       dpr = Math.min(window.devicePixelRatio || 1, 2);
@@ -106,6 +106,11 @@
       }).observe(cv);
     }
   }
+
+  // Enlaces de redes aún sin URL (los envía el cliente): no saltar al inicio
+  document.querySelectorAll('a[data-pending]').forEach(function (a) {
+    a.addEventListener('click', function (e) { if (a.getAttribute('href') === '#') e.preventDefault(); });
+  });
 
   var y = document.querySelector('[data-year]');
   if (y) y.textContent = new Date().getFullYear();
