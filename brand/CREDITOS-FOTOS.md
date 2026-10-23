@@ -3,9 +3,9 @@ Reemplazar por fotos reales del centro cuando el cliente las envíe.
 
 | Archivo en site/img | Foto en Unsplash |
 |---|---|
-| hero.webp, hero-640.webp | https://unsplash.com/photos/L9U5UUScnHY |
+| hero.webp, hero-640.webp | https://unsplash.com/photos/QzY81G7dbOo |
 | reto.webp | https://unsplash.com/photos/_XLJy3h77cw |
-| sol-inbound.webp | https://unsplash.com/photos/QzY81G7dbOo |
+| sol-inbound.webp | https://unsplash.com/photos/rkfyUGkCgEU |
 | sol-outbound.webp | https://unsplash.com/photos/cA9yfugUDZ4 |
 | sol-backoffice.webp | https://unsplash.com/photos/nFLmPAf9dVc |
 | sol-chat.webp | https://unsplash.com/photos/uLnmmE8Y0E4 |
