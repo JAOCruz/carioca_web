@@ -8,3 +8,4 @@ brand/*.ai
 # documentos crudos del cliente (quedan locales)
 carioca_details.txt
 carioca_info_*.txt
+correo-capturas-*/
