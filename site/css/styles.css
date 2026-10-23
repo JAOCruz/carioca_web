@@ -120,6 +120,7 @@ html[lang="es"] .lang [data-l="es"],html[lang="en"] .lang [data-l="en"]{backgrou
 .chip--years b{font-size:34px;font-weight:800;letter-spacing:-.03em;line-height:1}
 .chip--years b::after{content:"+";font-size:22px;vertical-align:top;margin-left:1px}
 .chip--years > span{font-size:13px}
+@media (max-width:420px){.hero__ctas .btn{font-size:15px;padding:0 14px;gap:8px}}
 @media (min-width:600px){.hero__ctas{flex-direction:row;flex-wrap:wrap}}
 @media (min-width:960px){
   .hero{padding:calc(var(--nav-h) + 64px) 0 110px;min-height:min(94vh,880px);display:flex;align-items:center}
@@ -156,7 +157,9 @@ html[lang="es"] .lang [data-l="es"],html[lang="en"] .lang [data-l="en"]{backgrou
 .compare{display:grid;gap:16px;align-items:start}
 .compare__col{border-radius:var(--radius);padding:30px 26px;transition:transform .4s var(--ease),box-shadow .4s}
 .compare__col h3{display:flex;align-items:center;gap:10px;font-size:21px;margin-bottom:18px}
-.compare__mark{width:26px;height:auto}
+.compare__brand{display:flex!important;align-items:center;gap:12px;margin:-30px -26px 18px!important;padding:20px 26px;background:#fff;color:var(--ink);border-radius:var(--radius) var(--radius) 0 0}
+.compare__brand img{width:132px;height:auto}
+.opt{font-style:normal;color:var(--red-600);font-weight:800;white-space:nowrap}
 .compare__col li{position:relative;padding:12px 0 12px 36px;border-top:1px solid rgba(0,0,0,.07);font-size:16px;opacity:0;transform:translateX(-14px);transition:opacity .6s var(--ease),transform .6s var(--ease),color .3s}
 .compare__col.is-in li{opacity:1;transform:none}
 .compare__col li:nth-child(2){transition-delay:.12s}.compare__col li:nth-child(3){transition-delay:.24s}.compare__col li:nth-child(4){transition-delay:.36s}.compare__col li:nth-child(5){transition-delay:.48s}
@@ -179,6 +182,7 @@ html[lang="es"] .lang [data-l="es"],html[lang="en"] .lang [data-l="en"]{backgrou
   .compare__arrow{align-self:center}
   .compare__arrow svg{transform:none}
   .compare__col{padding:36px 34px}
+  .compare__brand{margin:-36px -34px 20px!important;padding:22px 34px}
 }
 
 /* Servicios: soluciones con imagen */
@@ -260,7 +264,7 @@ html[lang="es"] .lang [data-l="es"],html[lang="en"] .lang [data-l="en"]{backgrou
   .step p{max-height:0;opacity:0;overflow:hidden;transform:translateY(6px);transition:max-height .45s var(--ease),opacity .35s,transform .35s var(--ease),color .35s}
   .step:hover,.step:focus-visible{background:var(--red-600);color:#fff;transform:translateY(-6px);box-shadow:var(--shadow-red);z-index:2}
   .step:hover .step__n,.step:focus-visible .step__n{color:#fff}
-  .step:hover p,.step:focus-visible p{max-height:90px;opacity:1;transform:none;color:rgba(255,255,255,.92)}
+  .step:hover p,.step:focus-visible p{max-height:140px;opacity:1;transform:none;color:rgba(255,255,255,.92)}
 }
 @media (hover:hover) and (min-width:1000px){.steps{grid-template-columns:repeat(6,minmax(0,1fr))}}
 @media (hover:none) and (min-width:640px){.steps{grid-template-columns:1fr 1fr}}

@@ -20,7 +20,7 @@ Resumen (lo actualiza la sesión, 2026-10-09):
 - Empresa (correo 2026-10-22, `carioca_info_2026-10-22.txt`): los **30+ años son de la empresa en el mercado** (remesas, sector comercial y financiero, red de sucursales); el call center es una línea nueva. Equipo: Alfredo Ventura A. (Director Operativo, 30+ años en call centers) e Isailis Pujols (Gerente de Operaciones, 25+ años). Lista completa de 11 servicios en la sección "Nuestra experiencia operativa".
 - Archivos leídos: `carioca_details.txt` (colores + cuestionario), `carioca_info_2026-10-22.txt` (Sobre nosotros, equipo, servicios, WhatsApp), `Carioca/SVG/CariocaBrand-01…08.svg` (08 trae la foto embebida, 07 el degradado). `CariocaBrand.ai` no se abrió (mismo contenido que los SVG).
 
-Estado: **demo 1 construido** en `site/` (landing ES/EN con toggle, gracias.html, Netlify Forms, SEO base con noindex mientras sea demo). Repo: `github.com/JAOCruz/carioca_web` (`main`). Netlify: por conectar.
+Estado: demo en `site/` (landing ES/EN, gracias.html, Netlify Forms, SEO base con noindex mientras sea demo). Repo: `github.com/JAOCruz/carioca_web` (`main`, auto-deploy). Netlify: **https://carioca-demo.netlify.app/** (cuenta de Netlify distinta a la del CLI local; site id pendiente). Formulario: detección activada y aviso por email a cariocacallcenter@carioca.com.do + email de Juan (2026-10-23).
 Juan pidió (2026-10-19) no mostrar recuadros `[[PENDIENTE]]` en la página para presentarla al cliente: los pendientes van como comentario HTML y en la lista de preguntas.
 
 Si falta algo, **no lo inventes** (ni clientes, ni cifras, ni testimonios, ni certificaciones). Deja un marcador visible `[[PENDIENTE: …]]` y anótalo en la lista "Preguntas para el cliente" al final de este archivo.
@@ -41,6 +41,8 @@ Diseño y estructura aprobados en general. Cambios pedidos:
 
 **v2 aplicada (2026-10-22):** hero y sitio en blanco/rojo (sin fondos negros), logo más grande, menú con Inicio y Sobre nosotros, textos corregidos, 5 soluciones con foto, "El reto" con imagen y animación, etapas con descripción al pasar el cursor (en móvil siempre visibles), "pequeño" → flexibilidad, contacto con foto e íconos rojos, footer con degradado rosado y logo original, iconos de redes. Se mantuvo "tú".
 Provisional hasta que el cliente envíe: fotos (Unsplash, ver `brand/CREDITOS-FOTOS.md`), texto de Sobre nosotros (armado con datos del cuestionario), descripciones de las 12 etapas (redactadas por Arcova, validar), enlaces de Instagram/Facebook/YouTube (`href="#"` con `data-pending`), WhatsApp y dirección.
+
+**Ronda 3 (correo de Isailis 2026-10-23, aplicada):** "opc. 0" en la línea de atención (el enlace `tel:+18095353864,0` marca la opción 0 automáticamente); textos de las 12 etapas acortados (y corregido el corte); "Con Carioca" con franja blanca y logo original; fotos del hero, inbound y outbound cambiadas por agentes latinos (Unsplash); dirección **Calle Tomás Rodríguez de Sosa No. 4, Cacique 4, Santo Domingo** en mapa, botón y JSON-LD; asunto del aviso del formulario. Pendiente: botón de video (falta enlace).
 
 ## Alcance (US$650 = sencillo)
 - **Una sola página (landing)** con anclas, más una página de Gracias del formulario. Secciones sugeridas: Hero (qué hacen + CTA), Servicios, Por qué nosotros / cómo trabajamos, Industrias o casos (solo si hay datos reales), Contacto (formulario + WhatsApp + mapa si tienen oficina), Footer.
@@ -81,8 +83,9 @@ brand/           ← logo y material original del cliente (no se publica)
 ## Preguntas para el cliente
 - Validar descripciones de los 5 servicios y de las 12 etapas (redactadas por Arcova).
 - Enlaces de Instagram, Facebook y YouTube.
+- Video promocional (enlace de YouTube) para el botón "Ver video". Aclarado: sin CMS; Arcova actualiza enlaces a pedido.
+- Confirmar que recibieron el formulario de prueba (aviso desde formresponses@netlify.com).
 - ¿Fotos de Alfredo e Isailis para el equipo? (por ahora iniciales).
-- Dirección exacta de la oficina (o enlace de Google Maps) para la sección Ubicación.
 - Casos de éxito reales (cliente o sector, resultado, permiso para mencionarlos) y logos de clientes si se pueden mostrar.
 - En "Escalabilidad" mencionaron "picos de demanda del mercado cervecero y de bebidas": ¿es su nicho principal o lo dejamos genérico? (en el demo quedó genérico).
 - ¿Atienden en inglés (campañas bilingües)? Si sí, lo destacamos como servicio.

@@ -3,10 +3,10 @@ Reemplazar por fotos reales del centro cuando el cliente las envíe.
 
 | Archivo en site/img | Foto en Unsplash |
 |---|---|
-| hero.webp, hero-640.webp | https://unsplash.com/photos/wnpf3Q5pkXA |
+| hero.webp, hero-640.webp | https://unsplash.com/photos/5skDrjF5EMw |
 | reto.webp | https://unsplash.com/photos/_XLJy3h77cw |
-| sol-inbound.webp | https://unsplash.com/photos/mHusyBu4bxM |
-| sol-outbound.webp | https://unsplash.com/photos/WaGMKmJ2F0Y |
+| sol-inbound.webp | https://unsplash.com/photos/QzY81G7dbOo |
+| sol-outbound.webp | https://unsplash.com/photos/rrE2NMMxJX0 |
 | sol-backoffice.webp | https://unsplash.com/photos/nFLmPAf9dVc |
 | sol-chat.webp | https://unsplash.com/photos/uLnmmE8Y0E4 |
 | sol-reportes.webp | https://unsplash.com/photos/hpjSkU2UYSU |
