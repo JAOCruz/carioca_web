@@ -107,10 +107,24 @@
     }
   }
 
-  // Enlaces de redes aún sin URL (los envía el cliente): no saltar al inicio
-  document.querySelectorAll('a[data-pending]').forEach(function (a) {
-    a.addEventListener('click', function (e) { if (a.getAttribute('href') === '#') e.preventDefault(); });
-  });
+  // Video en ventana emergente: el archivo vive en Cloudflare R2 y solo se carga al abrirlo
+  var modal = document.getElementById('video-modal');
+  if (modal) {
+    var vid = modal.querySelector('video');
+    var closeVideo = function () { vid.pause(); if (modal.open) modal.close(); };
+    document.querySelectorAll('[data-video-open]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        if (!vid.src) vid.src = vid.dataset.src;
+        modal.showModal();
+        var pl = vid.play();
+        if (pl && pl.catch) pl.catch(function () {});
+        if (window.gtag) gtag('event', 'video_open');
+      });
+    });
+    modal.querySelector('[data-video-close]').addEventListener('click', closeVideo);
+    modal.addEventListener('click', function (e) { if (e.target === modal) closeVideo(); });
+    modal.addEventListener('close', function () { vid.pause(); });
+  }
 
   var y = document.querySelector('[data-year]');
   if (y) y.textContent = new Date().getFullYear();

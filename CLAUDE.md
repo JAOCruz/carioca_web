@@ -16,11 +16,11 @@ Resumen (lo actualiza la sesión, 2026-10-09):
 - Contacto: +1 809-535-3864 es la **línea de atención al cliente (solo llamadas)**. **WhatsApp: +1 849-858-1517** (correo 2026-10-22; botón flotante verde, canal en Contacto y en gracias.html). Formulario → cariocacallcenter@carioca.com.do. Dirección: Calle Tomás Rodríguez de Sosa No. 4, Cacique 4, Santo Domingo (correo 2026-10-23).
 - Notas del cliente (2026-10-19): logo del menú siempre en rojo (también en la página de gracias); el botón flotante es de llamada (rojo) hasta que haya WhatsApp.
 - Logo / colores / fotos: colores #ffffff, #ec2025, #262526. Logo = rectángulo rojo con "C" blanca + wordmark "Carioca" (SVG en `brand/svg/`, limpios en `site/img/logo*.svg`). Degradado rojo→negro de marca. Foto de agentes del mockup (probablemente de stock, baja resolución 948px). Tienen presentación y video de las instalaciones (no enviados).
-- Dominio: no tienen para el proyecto (su email usa carioca.com.do). Lanzamiento deseado: **20 oct 2026**. Sin GA4/Meta Pixel.
+- Dominio: eligieron **cariocacenter.com** (2026-10-28); compra y 50% restante pendientes al 2026-11-01, confirmar con Laura. Lanzamiento deseado era el 20 oct 2026 (ya pasó). Sin GA4/Meta Pixel.
 - Empresa (correo 2026-10-22, `carioca_info_2026-10-22.txt`): los **30+ años son de la empresa en el mercado** (remesas, sector comercial y financiero, red de sucursales); el call center es una línea nueva. Equipo: Alfredo Ventura A. (Director Operativo, 30+ años en call centers) e Isailis Pujols (Gerente de Operaciones, 25+ años). Lista completa de 11 servicios en la sección "Nuestra experiencia operativa".
 - Archivos leídos: `carioca_details.txt` (colores + cuestionario), `carioca_info_2026-10-22.txt` (Sobre nosotros, equipo, servicios, WhatsApp), `Carioca/SVG/CariocaBrand-01…08.svg` (08 trae la foto embebida, 07 el degradado). `CariocaBrand.ai` no se abrió (mismo contenido que los SVG).
 
-Estado: demo en `site/` (landing ES/EN, gracias.html, Netlify Forms, SEO base con noindex mientras sea demo). Repo: `github.com/JAOCruz/carioca_web` (`main`, auto-deploy). Netlify: **https://carioca-demo.netlify.app/** (cuenta de Netlify distinta a la del CLI local; site id pendiente). Formulario: detección activada y aviso por email a cariocacallcenter@carioca.com.do + email de Juan (2026-10-23).
+Estado: demo en `site/` (landing ES/EN, gracias.html, privacidad.html, Netlify Forms, SEO base con noindex mientras sea demo). Repo: `github.com/JAOCruz/carioca_web` (`main`, auto-deploy). Netlify: **https://carioca-demo.netlify.app/** (cuenta de Netlify distinta a la del CLI local; site id pendiente). Formulario: detección activada y aviso por email a cariocacallcenter@carioca.com.do + email de Juan (2026-10-23).
 Juan pidió (2026-10-19) no mostrar recuadros `[[PENDIENTE]]` en la página para presentarla al cliente: los pendientes van como comentario HTML y en la lista de preguntas.
 
 Si falta algo, **no lo inventes** (ni clientes, ni cifras, ni testimonios, ni certificaciones). Deja un marcador visible `[[PENDIENTE: …]]` y anótalo en la lista "Preguntas para el cliente" al final de este archivo.
@@ -40,9 +40,14 @@ Diseño y estructura aprobados en general. Cambios pedidos:
 - Ojo: mezclan "tu" y "su" en sus textos; definir uno (el sitio usa "tu").
 
 **v2 aplicada (2026-10-22):** hero y sitio en blanco/rojo (sin fondos negros), logo más grande, menú con Inicio y Sobre nosotros, textos corregidos, 5 soluciones con foto, "El reto" con imagen y animación, etapas con descripción al pasar el cursor (en móvil siempre visibles), "pequeño" → flexibilidad, contacto con foto e íconos rojos, footer con degradado rosado y logo original, iconos de redes. Se mantuvo "tú".
-Provisional hasta que el cliente envíe: fotos (Unsplash, ver `brand/CREDITOS-FOTOS.md`), texto de Sobre nosotros (armado con datos del cuestionario), descripciones de las 12 etapas (redactadas por Arcova, validar), enlaces de Instagram/Facebook/YouTube (`href="#"` con `data-pending`), WhatsApp y dirección.
+Provisional en ese momento; ya llegaron el texto de Sobre nosotros, WhatsApp, dirección, redes y video. Sigue por validar: descripciones de las 12 etapas.
 
-**Ronda 3 (correo de Isailis 2026-10-23, aplicada):** "opc. 0" en la línea de atención (el enlace `tel:+18095353864,0` marca la opción 0 automáticamente); textos de las 12 etapas acortados (y corregido el corte); "Con Carioca" con franja blanca y logo original; fotos del hero, inbound y outbound cambiadas por agentes latinos (Unsplash); dirección **Calle Tomás Rodríguez de Sosa No. 4, Cacique 4, Santo Domingo** en mapa, botón y JSON-LD; asunto del aviso del formulario. Pendiente: botón de video (falta enlace).
+**Ronda 3 (correo de Isailis 2026-10-23, aplicada):** "opc. 0" en la línea de atención (el enlace `tel:+18095353864,0` marca la opción 0 automáticamente); textos de las 12 etapas acortados (y corregido el corte); "Con Carioca" con franja blanca y logo original; fotos del hero, inbound y outbound cambiadas por agentes latinos (Unsplash); dirección **Calle Tomás Rodríguez de Sosa No. 4, Cacique 4, Santo Domingo** en mapa, botón y JSON-LD; asunto del aviso del formulario. (El botón de video se resolvió en la ronda 4.)
+
+**Ronda 4 (correo de Isailis 2026-11-03; capturas en `brand/feedback-2026-11-03/`):** redes reales (Instagram Cariocacallcenter, Facebook Cariocaccenter, YouTube @CariocacallcenterCarioca); mapa con la geolocalización exacta que enviaron (18.440496,-69.9345207, "Carioca Banco Union"); portada: el cliente pidió volver a la foto de la agente con headset (Unsplash wnpf3Q5pkXA); regla del cliente: **nada de fotos con celular, siempre headset**, por eso inbound, outbound, back office, correo/WhatsApp, reto y el póster del video son cuadros reales de su video; logo de Vagaro retocado en la foto de contacto; "Somos Carioca" con su texto repartido en intro + 3 tarjetas (los títulos de las tarjetas son de Arcova).
+Video: original 4K en `brand/video/` (gitignored, 115 MB). Versión web 1080p H.264 de 12 MB en **Cloudflare R2**, bucket `carioca` de la cuenta de Juan (wrangler): https://pub-6bf6eb5ff39043cebdc177067da62248.r2.dev/video/carioca-call-center.mp4 . Se abre en ventana emergente desde el hero y "Somos Carioca"; solo se descarga al abrirlo.
+
+**Política de privacidad (2026-11-04):** `site/privacidad.html` ES/EN, base en la de Lowess adaptada a este sitio (Ley 172-13). Enlazada desde el formulario y el footer. Falta que Carioca la valide.
 
 ## Alcance (US$650 = sencillo)
 - **Una sola página (landing)** con anclas, más una página de Gracias del formulario. Secciones sugeridas: Hero (qué hacen + CTA), Servicios, Por qué nosotros / cómo trabajamos, Industrias o casos (solo si hay datos reales), Contacto (formulario + WhatsApp + mapa si tienen oficina), Footer.
@@ -70,7 +75,7 @@ brand/           ← logo y material original del cliente (no se publica)
 ```
 
 ## Deploy
-- Repo sugerido: `JAOCruz/carioca` (Juan lo crea). Netlify: proyecto nuevo con publish dir `site` y sin build command.
+- Repo: `JAOCruz/carioca_web`, rama `main`: **un push despliega el demo**. Netlify: publish dir `site`, sin build command, en una cuenta distinta a la del CLI local (site id pendiente).
 - Previews con `netlify deploy --dir site` (borrador). **Producción, push a `main` y conectar el dominio los decide Juan**; dale el comando exacto.
 - Cuando quede creado, anota aquí y en la skill `arcova-infra` (tabla de proyectos): repo, Netlify site id y URL.
 
@@ -82,13 +87,23 @@ brand/           ← logo y material original del cliente (no se publica)
 
 ## Preguntas para el cliente
 - Validar descripciones de los 5 servicios y de las 12 etapas (redactadas por Arcova).
-- Enlaces de Instagram, Facebook y YouTube.
-- Video promocional (enlace de YouTube) para el botón "Ver video". Aclarado: sin CMS; Arcova actualiza enlaces a pedido.
+- Quitar el email de Juan de los avisos del formulario en Netlify cuando confirmen que reciben la prueba (la política dice que Arcova solo accede por soporte).
+- Validar la política de privacidad, en especial el plazo de conservación de 24 meses (lo propuso Arcova).
+- Confirmar el uso de cuadros de su video (personas de su equipo) en las fotos de la página.
 - Confirmar que recibieron el formulario de prueba (aviso desde formresponses@netlify.com).
 - ¿Fotos de Alfredo e Isailis para el equipo? (por ahora iniciales).
 - Casos de éxito reales (cliente o sector, resultado, permiso para mencionarlos) y logos de clientes si se pueden mostrar.
 - En "Escalabilidad" mencionaron "picos de demanda del mercado cervecero y de bebidas": ¿es su nicho principal o lo dejamos genérico? (en el demo quedó genérico).
 - ¿Atienden en inglés (campañas bilingües)? Si sí, lo destacamos como servicio.
-- Horarios de atención (¿24/7, extendido?), ubicación/ciudad de la oficina (para SEO local y mapa).
-- Fotos reales del equipo/instalaciones y el video del centro. ¿La foto del mockup tiene licencia (stock)?
-- Dominio a comprar o subdominio de carioca.com.do; GA4 cuando exista.
+- Horarios de atención (¿24/7, extendido?).
+- ¿La foto del mockup tiene licencia (stock)?
+- GA4 cuando exista (al activarlo, actualizar la sección de cookies de la política de privacidad).
+
+
+<!-- arcova-brain:start -->
+## Memoria compartida (aiviber `arcova-2`)
+Este proyecto usa el cerebro de Arcova (`~/Documents/W/arcova-brain`), proyecto aiviber **`arcova-2`** (cuenta de Juan, nunca el `epona` de Pillarware).
+- Al empezar: `memory_briefing` (namespace `arcova-2`) y `memory_search("carioca <tema>")`. Si faltan las herramientas `mcp__aiviber-arcova__memory_*`, avisa a Juan.
+- Guarda hallazgos, decisiones y respuestas del cliente con `memory_propose` + `memory_apply`, con llaves `carioca/<tema>`, `decisions/<fecha>-<tema>`, `todos/carioca`. Busca antes de crear; actualiza la llave existente. Sin secretos ni PII de clientes.
+- Reglas y convenciones completas: `~/Documents/W/arcova-brain/AGENTS.md` y `soul/hard-rules.md`.
+<!-- arcova-brain:end -->

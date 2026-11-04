@@ -27,6 +27,8 @@
   "email":"cariocacallcenter@carioca.com.do","telephone":"+1-809-535-3864",
   "contactPoint":[{"@type":"ContactPoint","contactType":"customer service","telephone":"+1-809-535-3864"},{"@type":"ContactPoint","contactType":"sales","telephone":"+1-849-858-1517","contactOption":"WhatsApp"}],
   "address":{"@type":"PostalAddress","streetAddress":"Calle Tomás Rodríguez de Sosa No. 4, Cacique 4","addressLocality":"Santo Domingo","addressCountry":"DO"},
+  "geo":{"@type":"GeoCoordinates","latitude":18.440496,"longitude":-69.9345207},
+  "sameAs":["https://www.instagram.com/Cariocacallcenter","https://www.facebook.com/Cariocaccenter","https://www.youtube.com/@CariocacallcenterCarioca"],
   "knowsLanguage":["es","en"],
   "hasOfferCatalog":{"@type":"OfferCatalog","name":"Servicios de outsourcing","itemListElement":[
    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Atención de llamadas entrantes (inbound)"}},
@@ -85,10 +87,11 @@
         <a class="btn btn--red" href="#contacto" data-i18n="hero.cta">Solicitar propuesta</a>
         <a class="btn btn--ghost" href="tel:+18095353864,0" data-tel><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-phone"/></svg><span data-i18n="hero.call">Llámanos: (809) 535-3864, opc. 0</span></a>
       </div>
+      <button class="video-link reveal" type="button" data-video-open><span class="video-link__ic"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-play"/></svg></span><span data-i18n="hero.video">Conoce nuestro centro en video</span></button>
     </div>
     <div class="hero__visual reveal">
       <figure class="hero__photo">
-        <img src="img/hero-640.webp" srcset="img/hero-640.webp 640w, img/hero.webp 1000w" sizes="(min-width: 960px) 540px, 100vw" width="1000" height="750" alt="Agente de atención al cliente sonriendo mientras atiende una llamada en la oficina" fetchpriority="high">
+        <img src="img/hero-640.webp" srcset="img/hero-640.webp 640w, img/hero.webp 1000w" sizes="(min-width: 960px) 540px, 100vw" width="1000" height="750" alt="Agente de contact center sonriendo con headset en su puesto de trabajo" fetchpriority="high">
       </figure>
       <div class="chip chip--call" aria-hidden="true">
         <span class="chip__pulse"></span>
@@ -123,7 +126,7 @@
         <p class="lead reveal" data-i18n="prob.lead">Mantener un departamento de atención propio cuesta caro y distrae a tu equipo de lo estratégico. Estas son las señales más comunes:</p>
       </div>
       <figure class="problem__img reveal">
-        <img src="img/reto.webp" width="720" height="540" loading="lazy" alt="Agente atendiendo una llamada frente a varias pantallas en un centro de operaciones">
+        <img src="img/reto.webp" width="720" height="540" loading="lazy" alt="Agentes de Carioca atendiendo en sus cubículos con headset">
       </figure>
     </div>
     <div class="compare">
@@ -162,7 +165,7 @@
     </div>
     <div class="solutions">
       <article class="sol reveal">
-        <figure class="sol__img"><img src="img/sol-inbound.webp" width="720" height="450" loading="lazy" alt="Agente de servicio al cliente atendiendo una llamada desde su escritorio"></figure>
+        <figure class="sol__img"><img src="img/sol-inbound.webp" width="720" height="450" loading="lazy" alt="Agente de Carioca sonriendo con headset en el centro de contacto"></figure>
         <div class="sol__body">
           <span class="sol__tag">Inbound</span>
           <h3 data-i18n="sol.1t">Atención de llamadas entrantes</h3>
@@ -170,7 +173,7 @@
         </div>
       </article>
       <article class="sol reveal">
-        <figure class="sol__img"><img src="img/sol-outbound.webp" width="720" height="450" loading="lazy" alt="Agente realizando una llamada de ventas desde su escritorio"></figure>
+        <figure class="sol__img"><img src="img/sol-outbound.webp" width="720" height="450" loading="lazy" alt="Agente de Carioca atendiendo una llamada con headset"></figure>
         <div class="sol__body">
           <span class="sol__tag">Outbound</span>
           <h3 data-i18n="sol.2t">Llamadas salientes</h3>
@@ -178,7 +181,7 @@
         </div>
       </article>
       <article class="sol reveal">
-        <figure class="sol__img"><img src="img/sol-backoffice.webp" width="720" height="450" loading="lazy" alt="Equipo trabajando en computadoras en una oficina"></figure>
+        <figure class="sol__img"><img src="img/sol-backoffice.webp" width="720" height="450" loading="lazy" alt="Supervisora de Carioca apoyando a una agente en su puesto"></figure>
         <div class="sol__body">
           <span class="sol__tag">Back office</span>
           <h3 data-i18n="sol.3t">Soporte back office</h3>
@@ -186,7 +189,7 @@
         </div>
       </article>
       <article class="sol reveal">
-        <figure class="sol__img"><img src="img/sol-chat.webp" width="720" height="450" loading="lazy" alt="Conversación de soporte por chat en una pantalla junto a un teléfono"></figure>
+        <figure class="sol__img"><img src="img/sol-chat.webp" width="720" height="450" loading="lazy" alt="Agente de Carioca trabajando frente a su computadora con headset"></figure>
         <div class="sol__body">
           <span class="sol__tag" data-i18n="sol.4tag">Correo y WhatsApp</span>
           <h3 data-i18n="sol.4t">Soporte por correo y WhatsApp</h3>
@@ -296,23 +299,39 @@
 <!-- SOBRE NOSOTROS — texto enviado por el cliente (correo 2026-10-22) -->
 <section class="section about" id="nosotros">
   <div class="wrap about__in">
-    <figure class="about__img reveal">
-      <img src="img/nosotros.webp" width="800" height="600" loading="lazy" alt="Equipo de trabajo reunido en una oficina">
-      <figcaption class="about__badge"><b>30+</b><span data-i18n="ab.badge">años en el mercado</span></figcaption>
-    </figure>
     <div class="about__copy">
       <p class="eyebrow reveal" data-i18n="ab.eyebrow">Sobre nosotros</p>
       <h2 class="h2 reveal" data-i18n="ab.title">Somos Carioca.</h2>
-      <p class="lead reveal" data-i18n="ab.p1">Carioca, S.R.L. es una empresa registrada en la República Dominicana con más de 30 años de experiencia en el mercado. Nos especializamos en servicios de remesas y en el sector comercial y financiero, respaldados por una eficiente red de sucursales distribuidas a nivel nacional.</p>
-      <p class="lead reveal" data-i18n="ab.p2">Como parte de nuestro crecimiento y compromiso con la innovación, hemos incursionado en el área de Call Center, ofreciendo servicios de outsourcing para clientes nacionales e internacionales. Contamos con una moderna plataforma de Contact Center y una solución tecnológica flexible y eficiente que nos permite brindar atención de calidad, optimizar procesos y adaptarnos a las necesidades específicas de cada cliente.</p>
+      <p class="about__intro reveal" data-i18n="ab.intro">Carioca, S.R.L. es una empresa registrada en la República Dominicana con más de 30 años de experiencia en el mercado.</p>
       <div class="social reveal">
         <span data-i18n="ab.follow">Síguenos</span>
-        <!-- [[PENDIENTE: enlaces de redes]] reemplazar href="#" por los perfiles reales -->
-        <a href="#" data-pending aria-label="Instagram"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-ig"/></svg></a>
-        <a href="#" data-pending aria-label="Facebook"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-fb"/></svg></a>
-        <a href="#" data-pending aria-label="YouTube"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-yt"/></svg></a>
+        <a href="https://www.instagram.com/Cariocacallcenter" target="_blank" rel="noopener" aria-label="Instagram"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-ig"/></svg></a>
+        <a href="https://www.facebook.com/Cariocaccenter" target="_blank" rel="noopener" aria-label="Facebook"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-fb"/></svg></a>
+        <a href="https://www.youtube.com/@CariocacallcenterCarioca" target="_blank" rel="noopener" aria-label="YouTube"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-yt"/></svg></a>
       </div>
     </div>
+    <button class="about__video reveal" type="button" data-video-open aria-label="Ver video de nuestro centro">
+      <img src="img/video-poster.webp" width="800" height="600" loading="lazy" alt="Agentes de Carioca en sus puestos del centro de contacto">
+      <span class="about__play" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-play"/></svg></span>
+      <span class="about__badge"><b>30+</b><span data-i18n="ab.badge">años en el mercado</span></span>
+    </button>
+  </div>
+  <div class="wrap about__grid">
+    <article class="about__card reveal">
+      <span class="card__icon"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-award"/></svg></span>
+      <h3 data-i18n="ab.1t">Nuestra trayectoria</h3>
+      <p data-i18n="ab.1d">Nos especializamos en servicios de remesas y en el sector comercial y financiero, respaldados por una eficiente red de sucursales distribuidas a nivel nacional.</p>
+    </article>
+    <article class="about__card reveal">
+      <span class="card__icon"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-headset"/></svg></span>
+      <h3 data-i18n="ab.2t">Nuestro Call Center</h3>
+      <p data-i18n="ab.2d">Como parte de nuestro crecimiento y compromiso con la innovación, hemos incursionado en el área de Call Center, ofreciendo servicios de outsourcing para clientes nacionales e internacionales.</p>
+    </article>
+    <article class="about__card reveal">
+      <span class="card__icon"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-chart"/></svg></span>
+      <h3 data-i18n="ab.3t">Nuestra plataforma</h3>
+      <p data-i18n="ab.3d">Contamos con una moderna plataforma de Contact Center y una solución tecnológica flexible y eficiente que nos permite brindar atención de calidad, optimizar procesos y adaptarnos a las necesidades específicas de cada cliente.</p>
+    </article>
   </div>
   <div class="wrap team">
     <div class="team__head">
@@ -376,12 +395,12 @@
       <div class="field"><label for="f-tel" data-i18n="f.phone">Teléfono</label><input id="f-tel" name="telefono" type="tel" autocomplete="tel"></div>
       <div class="field field--full"><label for="f-msg" data-i18n="f.msg">¿Qué operación te gustaría delegar?</label><textarea id="f-msg" name="mensaje" rows="4" required></textarea></div>
       <button class="btn btn--red btn--block" type="submit" data-i18n="f.send">Enviar solicitud</button>
-      <p class="form__note" data-i18n="f.note">Te respondemos lo antes posible. Tus datos solo se usan para contactarte.</p>
+      <p class="form__note" data-i18n-html="f.note">Te respondemos lo antes posible. Al enviar, aceptas nuestra <a href="privacidad.html">Política de Privacidad</a>.</p>
     </form>
   </div>
 </section>
 
-<!-- UBICACIÓN — dirección enviada por el cliente (correo 2026-10-23). Si el pin no queda exacto, pedir el enlace de Google Maps de la oficina. -->
+<!-- UBICACIÓN — dirección (correo 2026-10-23) y geolocalización exacta (correo 2026-11-03: Carioca Banco Union, 18.440496,-69.9345207) -->
 <section class="section location" id="ubicacion">
   <div class="wrap location__in">
     <div class="location__info">
@@ -393,10 +412,10 @@
         <li class="reveal"><span class="channels__ic"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-phone"/></svg></span>
           <span><small data-i18n="ct.line">Línea de atención al cliente</small><a href="tel:+18095353864,0" data-tel>+1 (809) 535-3864 <em class="opt" data-i18n="ct.opt">· Opc. 0</em></a></span></li>
       </ul>
-      <a class="btn btn--red reveal" href="https://www.google.com/maps/search/?api=1&amp;query=Calle+Tom%C3%A1s+Rodr%C3%ADguez+de+Sosa+4%2C+Santo+Domingo%2C+Rep%C3%BAblica+Dominicana" target="_blank" rel="noopener" data-maps><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-pin"/></svg><span data-i18n="loc.cta">Abrir en Google Maps</span></a>
+      <a class="btn btn--red reveal" href="https://www.google.com/maps/place/Carioca+Banco+Union/@18.4404535,-69.9345662,76m/data=!3m1!1e3!4m15!1m8!3m7!1s0x8ea56215864c4dc1:0xd02e14cdb83c7431!2sC.+Tom%C3%A1s+Rodriguez+de+Sosa+4,+Santo+Domingo!3b1!8m2!3d18.4413349!4d-69.9348516!16s%2Fg%2F11mtmmdgcc!3m5!1s0x8ea5623fcc6cd2db:0xcca471171b0fc3a2!8m2!3d18.440496!4d-69.9345207!16s%2Fg%2F11c72lpcjw" target="_blank" rel="noopener" data-maps><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-pin"/></svg><span data-i18n="loc.cta">Abrir en Google Maps</span></a>
     </div>
     <div class="location__map reveal">
-      <iframe src="https://www.google.com/maps?q=Calle+Tom%C3%A1s+Rodr%C3%ADguez+de+Sosa+4%2C+Santo+Domingo%2C+Rep%C3%BAblica+Dominicana&amp;z=16&amp;output=embed" title="Mapa de ubicación de Carioca" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      <iframe src="https://www.google.com/maps?q=18.440496,-69.9345207&amp;z=18&amp;output=embed" title="Mapa de ubicación de Carioca" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
     </div>
   </div>
 </section>
@@ -408,9 +427,9 @@
       <img src="img/logo.svg" alt="Carioca" width="170" height="26" loading="lazy">
       <p data-i18n="foot.tag">Un contact center hecho a tu medida.</p>
       <div class="social social--foot">
-        <a href="#" data-pending aria-label="Instagram"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-ig"/></svg></a>
-        <a href="#" data-pending aria-label="Facebook"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-fb"/></svg></a>
-        <a href="#" data-pending aria-label="YouTube"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-yt"/></svg></a>
+        <a href="https://www.instagram.com/Cariocacallcenter" target="_blank" rel="noopener" aria-label="Instagram"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-ig"/></svg></a>
+        <a href="https://www.facebook.com/Cariocaccenter" target="_blank" rel="noopener" aria-label="Facebook"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-fb"/></svg></a>
+        <a href="https://www.youtube.com/@CariocacallcenterCarioca" target="_blank" rel="noopener" aria-label="YouTube"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-yt"/></svg></a>
       </div>
     </div>
     <nav class="footer__links" aria-label="Pie de página">
@@ -424,6 +443,7 @@
     </nav>
     <div class="footer__bottom">
       <span>© <span data-year>2026</span> Carioca S.R.L.</span>
+      <a href="privacidad.html" data-i18n="pv.title">Política de Privacidad</a>
       <a href="https://arcovaco.com" target="_blank" rel="noopener" data-i18n="foot.by">Sitio por Arcova</a>
     </div>
   </div>
@@ -431,7 +451,13 @@
 
 <a class="float-btn float-btn--wa" href="https://wa.me/18498581517?text=Hola%20Carioca%2C%20me%20interesa%20conocer%20sus%20servicios%20de%20call%20center." target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp" data-wa><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-wa"/></svg></a>
 
+<dialog class="video-modal" id="video-modal" aria-label="Video de Carioca">
+  <button class="video-modal__close" type="button" data-video-close aria-label="Cerrar video">&times;</button>
+  <video controls playsinline preload="none" poster="img/video-poster.webp" data-src="https://pub-6bf6eb5ff39043cebdc177067da62248.r2.dev/video/carioca-call-center.mp4"></video>
+</dialog>
+
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-play" viewBox="0 0 24 24"><path fill="currentColor" d="M8 5.6v12.8c0 .8.9 1.3 1.6.8l9.9-6.4c.6-.4.6-1.2 0-1.6L9.6 4.8C8.9 4.3 8 4.8 8 5.6z"/></symbol>
   <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8zm8.4-18.2A11.8 11.8 0 0 0 1.9 17.9L.2 24l6.3-1.7A11.8 11.8 0 0 0 24 12a11.7 11.7 0 0 0-3.6-8.4z"/></symbol>
   <symbol id="i-ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></g></symbol>
   <symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M13.5 21v-7.5H16l.4-3h-2.9V8.6c0-.9.3-1.5 1.5-1.5h1.5V4.4c-.3 0-1.2-.1-2.2-.1-2.2 0-3.7 1.3-3.7 3.8v2.4H8v3h2.6V21h2.9z"/></symbol>
