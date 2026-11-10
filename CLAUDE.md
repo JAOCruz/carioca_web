@@ -47,6 +47,8 @@ Provisional en ese momento; ya llegaron el texto de Sobre nosotros, WhatsApp, di
 **Ronda 4 (correo de Isailis 2026-11-03; capturas en `brand/feedback-2026-11-03/`):** redes reales (Instagram Cariocacallcenter, Facebook Cariocaccenter, YouTube @CariocacallcenterCarioca); mapa con la geolocalización exacta que enviaron (18.440496,-69.9345207, "Carioca Banco Union"); portada: el cliente pidió volver a la foto de la agente con headset (Unsplash wnpf3Q5pkXA); regla del cliente: **nada de fotos con celular, siempre headset**, por eso inbound, outbound, back office, correo/WhatsApp, reto y el póster del video son cuadros reales de su video; logo de Vagaro retocado en la foto de contacto; "Somos Carioca" con su texto repartido en intro + 3 tarjetas (los títulos de las tarjetas son de Arcova).
 Video: original 4K en `brand/video/` (gitignored, 115 MB). Versión web 1080p H.264 de 12 MB en **Cloudflare R2**, bucket `carioca` de la cuenta de Juan (wrangler): https://pub-6bf6eb5ff39043cebdc177067da62248.r2.dev/video/carioca-call-center.mp4 . Se abre en ventana emergente desde el hero y "Somos Carioca"; solo se descarga al abrirlo.
 
+**Ronda 5 (correo de Isailis 2026-11-10; adjuntos en `brand/feedback-2026-11-10/`):** confirma que los requerimientos están completos; único pendiente: aclarar las imágenes, se ven oscuras. Se aclararon las 6 fotos sacadas del video (reto, inbound, outbound, back office, correo/WhatsApp y póster): gamma 0.6 + contraste y color +5%. Con eso dan el trabajo por completado. El video en sí no se tocó.
+
 **Política de privacidad (2026-11-04):** `site/privacidad.html` ES/EN, base en la de Lowess adaptada a este sitio (Ley 172-13). Enlazada desde el formulario y el footer. Falta que Carioca la valide.
 
 ## Alcance (US$650 = sencillo)
@@ -87,10 +89,9 @@ brand/           ← logo y material original del cliente (no se publica)
 
 ## Preguntas para el cliente
 - Validar descripciones de los 5 servicios y de las 12 etapas (redactadas por Arcova).
-- Quitar el email de Juan de los avisos del formulario en Netlify cuando confirmen que reciben la prueba (la política dice que Arcova solo accede por soporte).
-- Validar la política de privacidad, en especial el plazo de conservación de 24 meses (lo propuso Arcova).
+- El formulario funciona (confirmado por Juan, 2026-11-06). Falta que Juan quite su email de los avisos en Netlify (la política dice que Arcova solo accede por soporte).
+- Política de privacidad: Juan decidió no pedirles validarla en el correo de la ronda 4 (2026-11-06). El plazo de 24 meses lo propuso Arcova.
 - Confirmar el uso de cuadros de su video (personas de su equipo) en las fotos de la página.
-- Confirmar que recibieron el formulario de prueba (aviso desde formresponses@netlify.com).
 - ¿Fotos de Alfredo e Isailis para el equipo? (por ahora iniciales).
 - Casos de éxito reales (cliente o sector, resultado, permiso para mencionarlos) y logos de clientes si se pueden mostrar.
 - En "Escalabilidad" mencionaron "picos de demanda del mercado cervecero y de bebidas": ¿es su nicho principal o lo dejamos genérico? (en el demo quedó genérico).
